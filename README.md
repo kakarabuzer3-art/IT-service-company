@@ -1,4 +1,4 @@
-# Caravel — Multi-File Website (Offline-Ready)
+# IT-service-company — Caravel Website (Offline-Ready)
 
 Portfolio/corporate site for **Caravel**, refactored from a single self-contained
 HTML file into a multi-file project with **zero external network dependencies** —
