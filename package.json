@@ -1,0 +1,17 @@
+{
+  "name": "caravel-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Caravel corporate site - multi-file HTML/CSS/JS, fully offline-capable.",
+  "scripts": {
+    "validate": "node scripts/validate.js",
+    "selftest": "node scripts/selftest.js",
+    "imgtest": "node scripts/imgtest.js",
+    "test": "node scripts/validate.js && node scripts/selftest.js && node scripts/imgtest.js && node scripts/smoke-test.js",
+    "fonts": "node scripts/fetch-fonts.js"
+  },
+  "devDependencies": {
+    "jsdom": "^30.1.1"
+  }
+}
+

@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caravel — Navigate What's Next | Technology & Digital Solutions</title>
+<meta name="description" content="Caravel is a world-class technology and digital solutions company. Strategy, engineering, AI and cloud — delivered with precision.">
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" fill="%230a1633"/><path d="M20 7v22M20 9c8 3 11 10 11 16H20" fill="none" stroke="%237ce7ff" stroke-width="2"/><path d="M9 29h22" stroke="%237ce7ff" stroke-width="2"/></svg>'>
+<!-- Local webfonts (no CDN — works offline) -->
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<!-- App styles -->
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/chrome.css">
+<link rel="stylesheet" href="css/sections.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/perf.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- SVG SPRITE -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-ur" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M20.5 20.5L16.6 16.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></symbol>
+  <symbol id="i-comp" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M15 9l-2 4.8L8.2 16l2-4.8z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+  <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><rect x="10.6" y="10.6" width="2.8" height="2.8" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 8z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20h16M7 16v-5M12 16V7M17 16v-3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 20a6 6 0 0 1 12 0M16.5 5.6a3.5 3.5 0 0 1 0 6.8M17 14a5 5 0 0 1 5 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 4l1.8 4.9L19 10.7l-5.2 1.8L12 17.5l-1.8-5L5 10.7l5.2-1.8z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M19 17l.7 1.8L21.5 19.5l-1.8.7L19 22l-.7-1.8-1.8-.7 1.8-.7z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a12 12 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 10h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M14 2v6h6" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M3 13l9 5 9-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="1.4" fill="currentColor"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L4 14h6l-1 8 9-12h-6z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-3 4.5 4.5 0 0 1 8 3c0 6-8 11-8 11z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+  <symbol id="i-li" viewBox="0 0 24 24"><path d="M6.5 8.8H3.6V21h2.9zM5 7.4a1.7 1.7 0 1 0 0-3.4 1.7 1.7 0 0 0 0 3.4zM21 14.1c0-3.2-1.7-5.6-4.6-5.6a4 4 0 0 0-3.6 2V8.8H10V21h2.9v-6.1c0-1.6.7-2.9 2.3-2.9s2 1.4 2 3v6H21z" fill="currentColor"/></symbol>
+  <symbol id="i-tw" viewBox="0 0 24 24"><path d="M17.8 3h3l-6.6 7.6L22 21h-6.1l-4.8-6.3L5.6 21h-3l7.1-8.1L2 3h6.3l4.3 5.7z" fill="currentColor"/></symbol>
+  <symbol id="i-gh" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.4-1.1-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5A3.9 3.9 0 0 1 6.7 8.7a3.6 3.6 0 0 1 .1-2.7s.9-.3 2.8 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1a3.6 3.6 0 0 1 .1 2.7 3.9 3.9 0 0 1 1 2.7c0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z" fill="currentColor"/></symbol>
+</svg>
+<!-- LOADER -->
+<div id="loader" aria-hidden="true">
+  <svg class="lg-mark" viewBox="0 0 40 40" fill="none">
+    <circle class="dr" cx="20" cy="20" r="17" stroke="#7ce7ff" stroke-width="1.4"/>
+    <path class="dr2" d="M20 8v22M20 10c8 3 10.5 9.5 10.5 15.5H20" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+    <path class="dr2" d="M10 30h20" stroke="#1e5eff" stroke-width="1.6" stroke-linecap="round"/>
+  </svg>
+  <div class="lg-word" id="lgWord">CARAVEL</div>
+  <div class="lg-bar"><i id="lgBar"></i></div>
+  <div class="lg-pct" id="lgPct">000</div>
+</div>
+
+<div class="noise" aria-hidden="true"></div>
+<div id="cglow" aria-hidden="true"></div>
+<div id="pbar" aria-hidden="true"></div>
+
+<!-- HEADER -->
+<header id="nav">
+  <div class="nav-in">
+    <a class="logo" href="#/home" aria-label="Caravel home">
+      <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <circle cx="20" cy="20" r="17" stroke="currentColor" stroke-width="1.4" opacity=".9"/>
+        <path d="M20 8v22M20 10c8 3 10.5 9.5 10.5 15.5H20" stroke="var(--blue)" stroke-width="1.7" stroke-linecap="round"/>
+        <path d="M10 30h20" stroke="var(--cyan)" stroke-width="1.7" stroke-linecap="round"/>
+      </svg>
+      <span class="wm">Caravel</span>
+    </a>
+    <ul class="nav-links" aria-label="Primary">
+      <li><a class="nl" href="#/about">About</a></li>
+      <li class="mm has-panel">
+        <button class="nl" aria-expanded="false" aria-haspopup="true">Services <svg aria-hidden="true"><use href="#i-chev"/></svg></button>
+        <div class="mm-panel">
+          <div class="mm-grid">
+            <a class="mm-item" href="#/services"><span class="ic"><svg><use href="#i-target"/></svg></span><span><b>Digital Strategy</b><span>Roadmaps, audits & transformation design</span></span></a>
+            <a class="mm-item" href="#/services"><span class="ic"><svg><use href="#i-layers"/></svg></span><span><b>Product Design</b><span>UX research, interfaces & design systems</span></span></a>
+            <a class="mm-item" href="#/services"><span class="ic"><svg><use href="#i-code"/></svg></span><span><b>Engineering</b><span>Web, mobile & platform development</span></span></a>
+            <a class="mm-item" href="#/services"><span class="ic"><svg><use href="#i-spark"/></svg></span><span><b>AI & Data</b><span>ML systems, analytics & automation</span></span></a>
+            <a class="mm-item" href="#/services"><span class="ic"><svg><use href="#i-cloud"/></svg></span><span><b>Cloud & DevOps</b><span>Infrastructure, Kubernetes & SRE</span></span></a>
+            <a class="mm-item" href="#/services"><span class="ic"><svg><use href="#i-shield"/></svg></span><span><b>Cybersecurity</b><span>Zero-trust, compliance & resilience</span></span></a>
+          </div>
+          <a class="mm-feat" href="#/services"><img src="assets/images/neural-network.png" alt="" loading="lazy"><div><span class="mono" style="color:#7ce7ff">Featured</span><b style="font-family:var(--disp);font-size:18px;display:block;margin-top:6px">The AI Accelerator Program →</b></div></a>
+        </div>
+      </li>
+      <li class="mm has-panel">
+        <button class="nl" aria-expanded="false" aria-haspopup="true">Solutions <svg aria-hidden="true"><use href="#i-chev"/></svg></button>
+        <div class="mm-panel">
+          <div class="mm-grid">
+            <a class="mm-item" href="#/solutions"><span class="ic"><svg><use href="#i-chart"/></svg></span><span><b>Caravel Atlas</b><span>Unified enterprise data platform</span></span></a>
+            <a class="mm-item" href="#/solutions"><span class="ic"><svg><use href="#i-spark"/></svg></span><span><b>Caravel Compass</b><span>Applied AI copilot suite</span></span></a>
+            <a class="mm-item" href="#/solutions"><span class="ic"><svg><use href="#i-cloud"/></svg></span><span><b>Caravel Helm</b><span>Multi-cloud operations control</span></span></a>
+            <a class="mm-item" href="#/solutions"><span class="ic"><svg><use href="#i-shield"/></svg></span><span><b>Caravel Ledger</b><span>Regulated finance infrastructure</span></span></a>
+          </div>
+          <a class="mm-feat" href="#/solutions"><img src="assets/images/atlas-platform.png" alt="" loading="lazy"><div><span class="mono" style="color:#7ce7ff">Platform</span><b style="font-family:var(--disp);font-size:18px;display:block;margin-top:6px">One fleet of products →</b></div></a>
+        </div>
+      </li>
+      <li><a class="nl" href="#/industries">Industries</a></li>
+      <li class="mm has-panel">
+        <button class="nl" aria-expanded="false" aria-haspopup="true">Work <svg aria-hidden="true"><use href="#i-chev"/></svg></button>
+        <div class="mm-panel">
+          <div class="mm-grid">
+            <a class="mm-item" href="#/portfolio"><span class="ic"><svg><use href="#i-layers"/></svg></span><span><b>Portfolio</b><span>Selected work across industries</span></span></a>
+            <a class="mm-item" href="#/cases"><span class="ic"><svg><use href="#i-chart"/></svg></span><span><b>Case Studies</b><span>Deep dives with measurable outcomes</span></span></a>
+            <a class="mm-item" href="#/testimonials"><span class="ic"><svg><use href="#i-users"/></svg></span><span><b>Testimonials</b><span>What our partners say</span></span></a>
+          </div>
+          <a class="mm-feat" href="#/cases"><img src="assets/images/analytics-dashboard.png" alt="" loading="lazy"><div><span class="mono" style="color:#7ce7ff">Latest</span><b style="font-family:var(--disp);font-size:18px;display:block;margin-top:6px">Helios Bank: +38% conversion →</b></div></a>
+        </div>
+      </li>
+      <li><a class="nl" href="#/pricing">Pricing</a></li>
+      <li class="mm has-panel">
+        <button class="nl" aria-expanded="false" aria-haspopup="true">Insights <svg aria-hidden="true"><use href="#i-chev"/></svg></button>
+        <div class="mm-panel">
+          <div class="mm-grid">
+            <a class="mm-item" href="#/blog"><span class="ic"><svg><use href="#i-doc"/></svg></span><span><b>Blog</b><span>Engineering & design thinking</span></span></a>
+            <a class="mm-item" href="#/faq"><span class="ic"><svg><use href="#i-comp"/></svg></span><span><b>FAQ</b><span>Answers to common questions</span></span></a>
+            <a class="mm-item" href="#/careers"><span class="ic"><svg><use href="#i-heart"/></svg></span><span><b>Careers</b><span>Join the crew — 14 open roles</span></span></a>
+          </div>
+          <a class="mm-feat" href="#/blog"><img src="assets/images/data-center.png" alt="" loading="lazy"><div><span class="mono" style="color:#7ce7ff">Read</span><b style="font-family:var(--disp);font-size:18px;display:block;margin-top:6px">Scaling AI in the enterprise →</b></div></a>
+        </div>
+      </li>
+      <li><a class="nl" href="#/contact">Contact</a></li>
+    </ul>
+    <div class="nav-acts">
+      <button class="icon-btn" id="searchBtn" aria-label="Search (Ctrl+K)"><svg><use href="#i-search"/></svg></button>
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode"><svg class="moon"><use href="#i-moon"/></svg><svg class="sun"><use href="#i-sun"/></svg></button>
+      <a class="btn btn-navy btn-sm mag" href="#/contact" style="margin-left:4px">Start a project <svg class="a-ur"><use href="#i-ur"/></svg></a>
+      <button class="icon-btn" id="burger" aria-label="Open menu"><svg><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+<!-- DRAWER -->
+<div id="drawer" aria-hidden="true">
+  <div class="bk" data-dclose></div>
+  <nav class="pn" aria-label="Mobile">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px">
+      <span class="mono">Menu</span>
+      <button class="icon-btn" data-dclose aria-label="Close menu"><svg><use href="#i-x"/></svg></button>
+    </div>
+    <a href="#/home">Home <svg><use href="#i-arr"/></svg></a>
+    <a href="#/about">About <svg><use href="#i-arr"/></svg></a>
+    <a href="#/services">Services <svg><use href="#i-arr"/></svg></a>
+    <a href="#/solutions">Solutions <svg><use href="#i-arr"/></svg></a>
+    <a href="#/industries">Industries <svg><use href="#i-arr"/></svg></a>
+    <a href="#/portfolio">Portfolio <svg><use href="#i-arr"/></svg></a>
+    <a href="#/cases">Case Studies <svg><use href="#i-arr"/></svg></a>
+    <a href="#/pricing">Pricing <svg><use href="#i-arr"/></svg></a>
+    <a href="#/careers">Careers <svg><use href="#i-arr"/></svg></a>
+    <a href="#/blog">Blog <svg><use href="#i-arr"/></svg></a>
+    <a href="#/faq">FAQ <svg><use href="#i-arr"/></svg></a>
+    <a href="#/testimonials">Testimonials <svg><use href="#i-arr"/></svg></a>
+    <a href="#/contact">Contact <svg><use href="#i-arr"/></svg></a>
+    <div style="margin-top:auto;padding-top:26px" class="socials">
+      <a href="#" aria-label="LinkedIn"><svg><use href="#i-li"/></svg></a>
+      <a href="#" aria-label="X"><svg><use href="#i-tw"/></svg></a>
+      <a href="#" aria-label="GitHub"><svg><use href="#i-gh"/></svg></a>
+    </div>
+  </nav>
+</div>
+
+<main id="main">
+
+<!-- ================= HOME ================= -->
+<section class="page" data-page="home" data-title="Caravel — Navigate What's Next">
+  <div class="hero" id="hero">
+    <canvas id="px" aria-hidden="true"></canvas>
+    <div class="orb o1" aria-hidden="true"></div><div class="orb o2" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div>
+        <p class="kick" data-rv>Technology & Digital Solutions — Est. 2014</p>
+        <h1 style="margin-top:22px">
+          <span class="lm" data-rv><span>Navigate</span></span>
+          <span class="lm" data-rv style="--d:.12s"><span>what's <em class="grad-text" style="font-style:normal" data-scr>next.</em></span></span>
+        </h1>
+        <p class="lead sub" data-rv style="--d:.25s">Caravel is the technology partner for enterprises in motion — strategy, engineering, AI and cloud, delivered with the precision of a well-run ship and the ambition of a fleet.</p>
+        <div class="hero-cta" data-rv style="--d:.35s">
+          <a class="btn btn-blue mag" href="#/contact">Start a project <svg class="a-ur"><use href="#i-ur"/></svg></a>
+          <a class="btn btn-ghost mag" href="#/portfolio">Explore the work <svg class="a-r"><use href="#i-arr"/></svg></a>
+        </div>
+        <div class="hero-meta" data-rv style="--d:.45s">
+          <div><b>Lisbon · NYC · Singapore</b><span>Global delivery</span></div>
+          <div><b>ISO 27001 · SOC 2</b><span>Certified security</span></div>
+          <div><b>4.9 / 5 partner score</b><span>320 reviews</span></div>
+        </div>
+      </div>
+      <div class="hero-vis" data-rv style="--d:.3s">
+        <div class="frame kb"><img src="assets/images/neural-network.png" alt="Abstract neural network visualization in electric blue" fetchpriority="high"></div>
+        <div class="float-card fc1">
+          <span>Platform uptime</span><b>99.99%</b>
+          <svg class="spark" viewBox="0 0 120 34"><path d="M2 26 C 18 24, 24 12, 38 14 S 62 26, 76 16 S 100 4, 118 8"/></svg>
+        </div>
+        <div class="float-card fc2">
+          <span>AI models in production</span><b>120+</b>
+          <div class="metrics" style="gap:18px;margin-top:4px"><div><b style="font-size:15px">3.2B</b><span>events / day</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mq" aria-hidden="true"><div class="track">
+    <span class="cl">Helios Bank</span><span class="cl">Aurora Health</span><span class="cl">Nordwind</span><span class="cl">Quantica</span><span class="cl">Meridian</span><span class="cl">Vantage Air</span><span class="cl">Skyline Retail</span><span class="cl">Atlas Energy</span>
+    <span class="cl">Helios Bank</span><span class="cl">Aurora Health</span><span class="cl">Nordwind</span><span class="cl">Quantica</span><span class="cl">Meridian</span><span class="cl">Vantage Air</span><span class="cl">Skyline Retail</span><span class="cl">Atlas Energy</span>
+  </div></div>
+
+  <div class="sec">
+    <div class="wrap">
+      <div class="stats" data-rv>
+        <div class="stat"><b><span data-count="240">0</span><em>+</em></b><span>Voyages delivered — products shipped end-to-end</span><div class="pline"><i></i></div></div>
+        <div class="stat"><b><span data-count="98">0</span><em>%</em></b><span>Client retention across multi-year engagements</span><div class="pline"><i></i></div></div>
+        <div class="stat"><b><em>$</em><span data-count="2.4" data-dec="1">0</span><em>B</em></b><span>Enterprise value created for partners since 2014</span><div class="pline"><i></i></div></div>
+        <div class="stat"><b><span data-count="27">0</span></b><span>Countries with live Caravel-built systems</span><div class="pline"><i></i></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="sec" style="padding-top:0">
+    <div class="wrap split">
+      <div class="sticky" data-rv>
+        <p class="kick">What we do</p>
+        <h2 class="h-lg" style="margin:18px 0 20px">A full crew for the digital voyage.</h2>
+        <p class="lead">Four disciplines, one accountable team. We chart the strategy, design the vessel, build the engine and keep it sailing in production.</p>
+        <a class="btn btn-ghost mag" href="#/services" style="margin-top:28px">All services <svg class="a-r"><use href="#i-arr"/></svg></a>
+      </div>
+      <div>
+        <div class="cap" data-rv><span class="ic"><svg><use href="#i-target"/></svg></span>
+          <div><h3>Strategy & Transformation</h3><p>Technology audits, digital roadmaps and operating-model design that turn ambition into a sequenced, fundable plan.</p>
+          <div class="tags"><span class="chip">Roadmaps</span><span class="chip">Due diligence</span><span class="chip">Architecture</span></div>
+          <a class="go" href="#/services">Explore <svg><use href="#i-arr"/></svg></a></div>
+        </div>
+        <div class="cap" data-rv style="--d:.08s"><span class="ic"><svg><use href="#i-layers"/></svg></span>
+          <div><h3>Product & Experience Design</h3><p>Research-driven UX, interface systems and prototyping that make complex enterprise tools feel inevitable.</p>
+          <div class="tags"><span class="chip">Design systems</span><span class="chip">UX research</span><span class="chip">Prototyping</span></div>
+          <a class="go" href="#/services">Explore <svg><use href="#i-arr"/></svg></a></div>
+        </div>
+        <div class="cap" data-rv style="--d:.16s"><span class="ic"><svg><use href="#i-code"/></svg></span>
+          <div><h3>Software Engineering</h3><p>Web, mobile and platform engineering with senior-only squads, trunk-based development and 90%+ test coverage.</p>
+          <div class="tags"><span class="chip">TypeScript</span><span class="chip">Go / Rust</span><span class="chip">Event-driven</span></div>
+          <a class="go" href="#/services">Explore <svg><use href="#i-arr"/></svg></a></div>
+        </div>
+        <div class="cap" data-rv style="--d:.24s"><span class="ic"><svg><use href="#i-spark"/></svg></span>
+          <div><h3>AI, Data & Cloud</h3><p>Production ML systems, real-time data platforms and multi-cloud infrastructure engineered for resilience and cost.</p>
+          <div class="tags"><span class="chip">LLM systems</span><span class="chip">Kubernetes</span><span class="chip">SRE</span></div>
+          <a class="go" href="#/services">Explore <svg><use href="#i-arr"/></svg></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sec" style="padding-top:0">
+    <div class="wrap">
+      <div class="band" data-rv>
+        <div class="bg" data-plx="0.12"><img src="assets/images/data-center.png" alt="Futuristic data center corridor glowing blue" loading="lazy" decoding="async"></div>
+        <div class="ovl"></div>
+        <div class="in">
+          <span class="mono" style="color:#7ce7ff">Infrastructure</span>
+          <blockquote style="margin-top:14px">"We run mission-critical systems the way airlines run checklists — calmly, and twice."</blockquote>
+          <div class="metrics" style="margin-top:26px"><div><b style="color:#fff">3.2B</b><span style="color:#9fb3d9">events processed daily</span></div><div><b style="color:#fff">42ms</b><span style="color:#9fb3d9">median API latency</span></div><div><b style="color:#fff">0</b><span style="color:#9fb3d9">sev-1 incidents in 2025</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec" style="padding-top:0">
+    <div class="wrap">
+      <div data-rv style="display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap">
+        <div><p class="kick">Our process</p><h2 class="h-md" style="margin-top:16px">Five movements, one destination.</h2></div>
+        <span class="mono">01 — 05</span>
+      </div>
+      <div class="steps" data-rv>
+        <div class="ln" aria-hidden="true"></div>
+        <div class="step"><span class="dot"></span><span class="n">01</span><h3>Chart</h3><p>Discovery, stakeholder interviews and systems mapping to define true north.</p></div>
+        <div class="step"><span class="dot"></span><span class="n">02</span><h3>Plot</h3><p>Architecture, prototypes and a costed roadmap with measurable milestones.</p></div>
+        <div class="step"><span class="dot"></span><span class="n">03</span><h3>Sail</h3><p>Senior squads ship in weekly cycles with transparent demos and metrics.</p></div>
+        <div class="step"><span class="dot"></span><span class="n">04</span><h3>Trim</h3><p>Hardening, observability and performance tuning before scale.</p></div>
+        <div class="step"><span class="dot"></span><span class="n">05</span><h3>Expand</h3><p>Enablement, handover or long-term partnership — your choice, your helm.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec" style="padding-top:0">
+    <div class="wrap" data-rv><p class="kick" style="justify-content:center;display:flex">Technologies we command</p></div>
+    <div class="techrow wrap">
+      <div class="mq"><div class="track"><span class="cl" style="letter-spacing:.1em"><span class="chip">TypeScript</span><span class="chip">React</span><span class="chip">Next.js</span><span class="chip">Node.js</span><span class="chip">Go</span><span class="chip">Rust</span><span class="chip">Python</span><span class="chip">GraphQL</span></span><span class="cl" style="letter-spacing:.1em"><span class="chip">TypeScript</span><span class="chip">React</span><span class="chip">Next.js</span><span class="chip">Node.js</span><span class="chip">Go</span><span class="chip">Rust</span><span class="chip">Python</span><span class="chip">GraphQL</span></span></div></div>
+      <div class="mq rev"><div class="track"><span class="cl" style="letter-spacing:.1em"><span class="chip">Kubernetes</span><span class="chip">Terraform</span><span class="chip">AWS</span><span class="chip">GCP</span><span class="chip">Azure</span><span class="chip">Kafka</span><span class="chip">PostgreSQL</span><span class="chip">PyTorch</span></span><span class="cl" style="letter-spacing:.1em"><span class="chip">Kubernetes</span><span class="chip">Terraform</span><span class="chip">AWS</span><span class="chip">GCP</span><span class="chip">Azure</span><span class="chip">Kafka</span><span class="chip">PostgreSQL</span><span class="chip">PyTorch</span></span></div></div>
+    </div>
+  </div>
+  <div class="sec" style="padding-top:0">
+    <div class="wrap">
+      <div data-rv style="display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:44px">
+        <div><p class="kick">Selected work</p><h2 class="h-md" style="margin-top:16px">Voyages worth reading.</h2></div>
+        <a class="btn btn-ghost mag" href="#/cases">All case studies <svg class="a-r"><use href="#i-arr"/></svg></a>
+      </div>
+      <div class="stack">
+        <article class="st-card card" style="--i:0">
+          <div class="tx"><span class="chip" style="align-self:start">Fintech · 2025</span><h3 class="h-md">Helios Bank replatforms 4M customers to cloud-native core.</h3><p style="color:var(--mut);font-size:14.5px;max-width:52ch">A 14-month voyage from monolith to event-driven microservices — with zero downtime migration and a design system that cut feature lead time by half.</p>
+          <div class="metrics"><div><b class="grad-text">+38%</b><span>conversion</span></div><div><b>−61%</b><span>infra cost</span></div><div><b>4M</b><span>migrations</span></div></div>
+          <a class="go" href="#/cases" style="color:var(--blue);font-weight:600;font-size:13.5px;display:inline-flex;gap:8px;align-items:center">Read the case study <svg style="width:14px;height:14px"><use href="#i-arr"/></svg></a></div>
+          <div class="im"><img src="assets/images/finance-district.png" alt="Financial district skyline at night" loading="lazy" decoding="async"></div>
+        </article>
+        <article class="st-card card" style="--i:1">
+          <div class="tx"><span class="chip" style="align-self:start">Healthcare · 2025</span><h3 class="h-md">Aurora Health's AI triage cuts wait times by a third.</h3><p style="color:var(--mut);font-size:14.5px;max-width:52ch">Clinical-grade ML with human-in-the-loop review, deployed across 42 clinics and certified against HIPAA and EU MDR requirements.</p>
+          <div class="metrics"><div><b class="grad-text">−34%</b><span>wait time</span></div><div><b>42</b><span>clinics live</span></div><div><b>97%</b><span>clinician trust</span></div></div>
+          <a class="go" href="#/cases" style="color:var(--blue);font-weight:600;font-size:13.5px;display:inline-flex;gap:8px;align-items:center">Read the case study <svg style="width:14px;height:14px"><use href="#i-arr"/></svg></a></div>
+          <div class="im"><img src="assets/images/health-tech.png" alt="Clinician using holographic health interface" loading="lazy" decoding="async"></div>
+        </article>
+        <article class="st-card card" style="--i:2">
+          <div class="tx"><span class="chip" style="align-self:start">Logistics · 2024</span><h3 class="h-md">Nordwind's autonomous port orchestration, live in 9 months.</h3><p style="color:var(--mut);font-size:14.5px;max-width:52ch">IoT telemetry, digital twins and route optimization across three ports — moving 1.8M containers a year with machine precision.</p>
+          <div class="metrics"><div><b class="grad-text">+22%</b><span>throughput</span></div><div><b>1.8M</b><span>containers/yr</span></div><div><b>9mo</b><span>to live</span></div></div>
+          <a class="go" href="#/cases" style="color:var(--blue);font-weight:600;font-size:13.5px;display:inline-flex;gap:8px;align-items:center">Read the case study <svg style="width:14px;height:14px"><use href="#i-arr"/></svg></a></div>
+          <div class="im"><img src="assets/images/logistics-port.png" alt="Automated logistics port at dusk" loading="lazy" decoding="async"></div>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec" style="padding-top:0">
+    <div class="wrap">
+      <div class="card" style="padding:clamp(30px,5vw,64px)" data-rv>
+        <div class="slider" data-slider>
+          <div class="sl-track">
+            <div class="sl-slide"><span class="qmark">"</span><p class="slide-q" style="margin-top:10px">Caravel didn't behave like a vendor. They behaved like our best team — obsessed with the outcome, allergic to theatre.</p>
+              <div class="who"><span class="ava">EV</span><div><b style="font-family:var(--disp);font-size:15px">Elena Vasquez</b><br><span class="mono">CTO — Helios Bank</span></div></div></div>
+            <div class="sl-slide"><span class="qmark">"</span><p class="slide-q" style="margin-top:10px">The rare partner that ships on the date, at the quality, and at the cost they promised. All three. Twice.</p>
+              <div class="who"><span class="ava">MO</span><div><b style="font-family:var(--disp);font-size:15px">Marcus Okafor</b><br><span class="mono">VP Engineering — Nordwind</span></div></div></div>
+            <div class="sl-slide"><span class="qmark">"</span><p class="slide-q" style="margin-top:10px">Their AI work passed our clinical governance board on the first review. That has never happened before.</p>
+              <div class="who"><span class="ava">IK</span><div><b style="font-family:var(--disp);font-size:15px">Dr. Ingrid Keller</b><br><span class="mono">CMO — Aurora Health</span></div></div></div>
+          </div>
+          <div class="sl-ctrl">
+            <button class="icon-btn" data-sl="prev" aria-label="Previous testimonial"><svg style="transform:rotate(180deg)"><use href="#i-arr"/></svg></button>
+            <button class="icon-btn" data-sl="next" aria-label="Next testimonial"><svg><use href="#i-arr"/></svg></button>
+            <span class="cnt" data-sl-cnt>01 / 03</span>
+            <div class="sl-dots" data-sl-dots></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec" style="padding-top:0">
+    <div class="wrap">
+      <div class="cta-band" data-rv>
+        <span class="mono" style="color:#7ce7ff;position:relative">Ready when you are</span>
+        <h2 style="margin-top:18px">Let's chart your next voyage.</h2>
+        <div class="row">
+          <a class="btn btn-light mag" href="#/contact">Book a strategy call <svg class="a-ur"><use href="#i-ur"/></svg></a>
+          <a class="btn mag" style="border:1px solid rgba(255,255,255,.3);color:#fff" href="#/pricing">See pricing <svg class="a-r"><use href="#i-arr"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ================= ABOUT ================= -->
+<section class="page" data-page="about" data-title="About — Caravel">
+  <div class="phead"><div class="wrap">
+    <nav class="crumb" aria-label="Breadcrumb"><a href="#/home">Home</a><span class="sep">/</span><span>About</span></nav>
+    <h1 class="h-xl" style="margin-top:26px;max-width:14ch">
+      <span class="lm" data-rv><span>The company</span></span>
+      <span class="lm" data-rv style="--d:.12s"><span>that <em class="grad-text" style="font-style:normal">charts</em> futures.</span></span>
+    </h1>
+    <div style="display:flex;gap:40px;margin-top:40px;flex-wrap:wrap" data-rv>
+      <div><span class="mono">Founded</span><b style="font-family:var(--disp);display:block;font-size:20px">2014, Lisbon</b></div>
+      <div><span class="mono">Crew</span><b style="font-family:var(--disp);display:block;font-size:20px">180 specialists</b></div>
+      <div><span class="mono">Offices</span><b style="font-family:var(--disp);display:block;font-size:20px">3 continents</b></div>
+      <div><span class="mono">Ownership</span><b style="font-family:var(--disp);display:block;font-size:20px">Independent</b></div>
+    </div>
+  </div></div>
+
+  <div class="sec" style="padding-top:0"><div class="wrap">
+    <p class="manif" data-rv>A caravel was the small ship that changed the map of the world. We build the <span class="hl">small, precise teams</span> that change the map of your industry — with <span class="hl">craft over theatre</span>, evidence over opinion, and <span class="hl">outcomes over activity</span>.</p>
+  </div></div>
+
+  <div class="sec" style="padding-top:0"><div class="wrap split">
+    <div class="band" style="min-height:520px" data-rv>
+      <div class="bg kb"><img src="assets/images/strategy-meeting.png" alt="Executive team in a strategy meeting" loading="lazy" decoding="async"></div>
+      <div class="ovl"></div>
+      <div class="in"><span class="mono" style="color:#7ce7ff">Since 2014</span><blockquote style="font-size:20px;max-width:26ch;margin-top:10px">Every great voyage begins with an unreasonable belief.</blockquote></div>
+    </div>
+    <div data-rv style="--d:.15s">
+      <p class="kick">Our story</p>
+      <p class="drop" style="margin-top:22px;color:var(--ink2)">Caravel began in a Lisbon attic with three engineers, one whiteboard, and a conviction that enterprise software didn't have to feel like a punishment. Twelve years later, that whiteboard hangs in our headquarters — still in use, still arguing.</p>
+      <p style="margin-top:16px;color:var(--mut);font-size:15px">We've grown deliberately: 180 people, no acquisitions, no debt, and a partner list that reads like a who's-who of regulated, high-stakes industries. We stay independent so our only loyalty is to the work.</p>
+      <div class="metrics" style="margin-top:30px"><div><b class="grad-text">12</b><span>years sailing</span></div><div><b>96</b><span>NPS score</span></div><div><b>0</b><span>missed launches in 2025</span></div></div>
+    </div>
+  </div></div>
+  <div class="sec" style="padding-top:0"><div class="wrap">
+    <div data-rv><p class="kick">Values</p><h2 class="h-md" style="margin-top:16px">The code we sail by.</h2></div>
+    <div class="perks" style="margin-top:44px;grid-template-columns:repeat(4,1fr)">
+      <div class="card perk" data-rv><span class="ic"><svg><use href="#i-comp"/></svg></span><h3>True North</h3><p>We say the hard thing early. Bad news travels fastest here.</p></div>
+      <div class="card perk" data-rv style="--d:.08s"><span class="ic"><svg><use href="#i-layers"/></svg></span><h3>Craft</h3><p>The last 2% of quality is the first thing our clients feel.</p></div>
+      <div class="card perk" data-rv style="--d:.16s"><span class="ic"><svg><use href="#i-users"/></svg></span><h3>One Crew</h3><p>No benches, no B-teams. Every voyage gets our best hands.</p></div>
+      <div class="card perk" data-rv style="--d:.24s"><span class="ic"><svg><use href="#i-bolt"/></svg></span><h3>Momentum</h3><p>Weekly shipping cadence. Demos over decks, always.</p></div>
+    </div>
+  </div></div>
+
+  <div class="sec" style="padding-top:0"><div class="wrap split">
+    <div class="sticky" data-rv><p class="kick">Timeline</p><h2 class="h-md" style="margin-top:16px">Twelve years, five harbors.</h2><p class="lead" style="margin-top:16px">Growth measured not in headcount, but in the caliber of problems we're trusted with.</p></div>
+    <div class="tl" data-rv>
+      <div class="wire" aria-hidden="true"></div>
+      <div class="tl-item"><span class="yr">2014</span><h3>First harbor — Lisbon</h3><p>Three engineers, one attic, first client: a port authority that still runs our scheduling engine today.</p></div>
+      <div class="tl-item"><span class="yr">2017</span><h3>Enterprise waters</h3><p>First Fortune 500 engagement; the practice that became Caravel Ledger is born inside a bank.</p></div>
+      <div class="tl-item"><span class="yr">2020</span><h3>Across the Atlantic</h3><p>New York office opens; remote-first operating model ships internally before the world needed it.</p></div>
+      <div class="tl-item"><span class="yr">2023</span><h3>The AI practice</h3><p>Compass AI launches; 40 production ML systems delivered in the first eighteen months.</p></div>
+      <div class="tl-item"><span class="yr">2026</span><h3>Eastern horizon</h3><p>Singapore studio opens, completing follow-the-sun delivery across three continents.</p></div>
+    </div>
+  </div></div>
+  <div class="sec" style="padding-top:0"><div class="wrap">
+    <div data-rv style="display:flex;justify-content:space-between;align-items:end;flex-wrap:wrap;gap:20px"><div><p class="kick">Leadership</p><h2 class="h-md" style="margin-top:16px">The officers on deck.</h2></div><a class="btn btn-ghost mag" href="#/careers">Join the crew <svg class="a-ur"><use href="#i-ur"/></svg></a></div>
+    <div class="team" style="margin-top:44px">
+      <div class="card tm" data-rv><span class="ava">RA</span><b>Rui Almeida</b><span>Co-founder · CEO</span></div>
+      <div class="card tm" data-rv style="--d:.06s"><span class="ava" style="background:linear-gradient(135deg,#0aa5d8,#1e5eff)">MC</span><b>Mara Chen</b><span>Co-founder · CTO</span></div>
+      <div class="card tm" data-rv style="--d:.12s"><span class="ava" style="background:linear-gradient(135deg,#12234f,#0aa5d8)">SB</span><b>Sofia Barros</b><span>Chief Design Officer</span></div>
+      <div class="card tm" data-rv style="--d:.18s"><span class="ava" style="background:linear-gradient(135deg,#1e5eff,#12234f)">DN</span><b>David Ncube</b><span>Chief AI Officer</span></div>
+      <div class="card tm" data-rv><span class="ava" style="background:linear-gradient(135deg,#0aa5d8,#12234f)">AK</span><b>Ana Kovač</b><span>VP Engineering</span></div>
+      <div class="card tm" data-rv style="--d:.06s"><span class="ava">JW</span><b>James Whitfield</b><span>Chief Revenue Officer</span></div>
+      <div class="card tm" data-rv style="--d:.12s"><span class="ava" style="background:linear-gradient(135deg,#1e5eff,#0aa5d8)">PT</span><b>Priya Tan</b><span>VP Client Partnerships</span></div>
+      <div class="card tm" data-rv style="--d:.18s"><span class="ava" style="background:linear-gradient(135deg,#12234f,#1e5eff)">LM</span><b>Lucas Moreira</b><span>Head of Cloud & SRE</span></div>
+    </div>
+    <div class="band" style="min-height:420px;margin-top:60px" data-rv>
+      <div class="bg kb"><img src="assets/images/team-studio.png" alt="The Caravel team in the Lisbon studio" loading="lazy" decoding="async"></div>
+      <div class="ovl"></div>
+      <div class="in"><span class="mono" style="color:#7ce7ff">Lisbon studio</span><blockquote style="font-size:20px;max-width:28ch;margin-top:10px">180 people. 22 nationalities. One standard.</blockquote></div>
+    </div>
+  </div></div>
+</section>
+<!-- ================= SERVICES ================= -->
+<section class="page" data-page="services" data-title="Services — Caravel">
+  <div class="phead"><div class="wrap">
+    <nav class="crumb" aria-label="Breadcrumb"><a href="#/home">Home</a><span class="sep">/</span><span>Services</span></nav>
+    <h1 class="h-xl" style="margin-top:26px"><span class="lm" data-rv><span>Everything a voyage</span></span><span class="lm" data-rv style="--d:.12s"><span>needs. <em class="grad-text" style="font-style:normal">Nothing else.</em></span></span></h1>
+    <p class="lead" style="margin-top:26px" data-rv>Six disciplines, practiced deeply and offered honestly. Hover to preview, open to inspect — every service ships with senior people and measurable outcomes.</p>
+  </div></div>
+
+  <div class="sec" style="padding-top:0"><div class="wrap svc-grid">
+    <div class="svc-list" data-rv>
+      <div class="svc-row"><button class="svc-h" aria-expanded="false"><span class="no">/ 01</span><b>Digital Strategy</b><span class="pl"><svg><use href="#i-plus"/></svg></span></button>
+        <div class="svc-b"><div><p>Technology due-diligence, architecture reviews and 3-year digital roadmaps costed to the quarter. We leave you with a plan your board can fund and your teams can execute.</p>
+        <div class="tags"><span class="chip">Roadmapping</span><span class="chip">Tech audit</span><span class="chip">Op-model design</span><span class="chip">Build/buy analysis</span></div></div></div></div>
+      <div class="svc-row"><button class="svc-h" aria-expanded="false"><span class="no">/ 02</span><b>Product & Experience Design</b><span class="pl"><svg><use href="#i-plus"/></svg></span></button>
+        <div class="svc-b"><div><p>Research, service blueprints, interface design and tokenized design systems — tested with real users, handed over in Figma and code.</p>
+        <div class="tags"><span class="chip">UX research</span><span class="chip">Design systems</span><span class="chip">Prototyping</span><span class="chip">Accessibility</span></div></div></div></div>
+      <div class="svc-row"><button class="svc-h" aria-expanded="false"><span class="no">/ 03</span><b>Software Engineering</b><span class="pl"><svg><use href="#i-plus"/></svg></span></button>
+        <div class="svc-b"><div><p>Senior-only squads building web, mobile and backend platforms. Trunk-based development, 90%+ coverage, weekly production releases.</p>
+        <div class="tags"><span class="chip">Web platforms</span><span class="chip">Mobile</span><span class="chip">APIs</span><span class="chip">Event-driven</span></div></div></div></div>
+      <div class="svc-row"><button class="svc-h" aria-expanded="false"><span class="no">/ 04</span><b>AI & Machine Intelligence</b><span class="pl"><svg><use href="#i-plus"/></svg></span></button>
+        <div class="svc-b"><div><p>LLM copilots, forecasting, computer vision and decision systems — engineered with evaluation harnesses, guardrails and human-in-the-loop review from day one.</p>
+        <div class="tags"><span class="chip">LLM systems</span><span class="chip">MLOps</span><span class="chip">Forecasting</span><span class="chip">Vision</span></div></div></div></div>
+      <div class="svc-row"><button class="svc-h" aria-expanded="false"><span class="no">/ 05</span><b>Cloud & DevOps</b><span class="pl"><svg><use href="#i-plus"/></svg></span></button>
+        <div class="svc-b"><div><p>Multi-cloud platforms on Kubernetes, infrastructure-as-code, golden-path developer platforms and SRE practices that hold 99.99% SLOs.</p>
+        <div class="tags"><span class="chip">Kubernetes</span><span class="chip">Terraform</span><span class="chip">CI/CD</span><span class="chip">FinOps</span></div></div></div></div>
+      <div class="svc-row"><button class="svc-h" aria-expanded="false"><span class="no">/ 06</span><b>Cybersecurity</b><span class="pl"><svg><use href="#i-plus"/></svg></span></button>
+        <div class="svc-b"><div><p>Zero-trust architecture, SOC 2 / ISO 27001 readiness, threat modeling and offensive testing — security as an enabler of speed, not a gate.</p>
+        <div class="tags"><span class="chip">Zero-trust</span><span class="chip">Compliance</span><span class="chip">Pentesting</span><span class="chip">Incident response</span></div></div></div></div>
+    </div>
+    <div class="svc-prev" data-rv style="--d:.15s">
+      <div class="frame">
+        <img class="on" src="assets/images/strategy-meeting.png" alt="" loading="lazy">
+        <img src="assets/images/analytics-dashboard.png" alt="" loading="lazy">
+        <img src="assets/images/engineering-workspace.png" alt="" loading="lazy">
+        <img src="assets/images/neural-network.png" alt="" loading="lazy">
+        <img src="assets/images/data-center.png" alt="" loading="lazy">
+        <img src="assets/images/headquarters.png" alt="" loading="lazy">
+      </div>
+      <p class="mono" style="margin-top:16px;text-align:right" id="svcCap">01 — Digital Strategy</p>
+    </div>
+  </div></div>
+
+  <div class="sec" style="padding-top:0"><div class="wrap">
+    <div data-rv><p class="kick">Engagement models</p><h2 class="h-md" style="margin-top:16px">Three ways to sail together.</h2></div>
+    <div class="plans" style="margin-top:44px">
+      <div class="card plan" data-rv><span class="mono">Sprint</span><h3 style="font-size:20px">Discovery Voyage</h3><p style="color:var(--mut);font-size:14px">Two to four weeks. A costed roadmap, prototype and architecture for one defined problem.</p><a class="btn btn-ghost btn-sm" href="#/contact" style="align-self:start">Scope a sprint</a></div>
+      <div class="card plan feat" data-rv style="--d:.1s"><span class="badge">Most chosen</span><span class="mono" style="color:#7ce7ff">Squad</span><h3 style="font-size:20px">Embedded Crew</h3><p style="color:rgba(255,255,255,.7);font-size:14px">A senior product squad (4–8) embedded with your teams, shipping weekly for quarters.</p><a class="btn btn-light btn-sm" href="#/contact" style="align-self:start">Build my crew</a></div>
+      <div class="card plan" data-rv style="--d:.2s"><span class="mono">Partnership</span><h3 style="font-size:20px">Fleet Alliance</h3><p style="color:var(--mut);font-size:14px">Multi-year, multi-squad partnership with shared OKRs, governance and co-owned platforms.</p><a class="btn btn-ghost btn-sm" href="#/contact" style="align-self:start">Talk alliances</a></div>
+    </div>
+  </div></div>
+</section>
+<!-- ================= SOLUTIONS ================= -->
+<section class="page" data-page="solutions" data-title="Solutions — Caravel">
+  <div class="phead"><div class="wrap">
+    <nav class="crumb" aria-label="Breadcrumb"><a href="#/home">Home</a><span class="sep">/</span><span>Solutions</span></nav>
+    <h1 class="h-xl" style="margin-top:26px"><span class="lm" data-rv><span>One fleet.</span></span><span class="lm" data-rv style="--d:.12s"><span>Four <em class="grad-text" style="font-style:normal">flagships.</em></span></span></h1>
+    <p class="lead" style="margin-top:26px" data-rv>Productized platforms born inside real client voyages — proven in production before they ever had a name.</p>
+  </div></div>
+
+  <div class="sec" style="padding-top:0"><div class="wrap" data-rv>
+    <div class="tabs" role="tablist" aria-label="Solutions" data-tabs>
+      <button class="tab" role="tab" aria-selected="true" data-tab="atlas">Atlas</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="compass">Compass</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="helm">Helm</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="ledger">Ledger</button>
+    </div>
+    <div class="tpanel on" data-panel="atlas">
+      <div><span class="chip">Data platform</span><h2 class="h-md" style="margin:16px 0">Caravel Atlas</h2><p style="color:var(--mut)">A unified, governed data platform that turns scattered warehouses into a single source of truth with real-time pipelines and semantic layers your analysts actually understand.</p>
+        <ul class="checks"><li><svg><use href="#i-check"/></svg>Sub-second OLAP on billions of rows</li><li><svg><use href="#i-check"/></svg>Column-level lineage & governance</li><li><svg><use href="#i-check"/></svg>Reverse-ETL to 60+ tools</li><li><svg><use href="#i-check"/></svg>Deployed in your cloud, your keys</li></ul>
+        <div class="metrics"><div><b class="grad-text">3.2B</b><span>events / day</span></div><div><b>42ms</b><span>query p95</span></div></div>
+        <a class="btn btn-blue mag" href="#/contact" style="margin-top:26px">Request a demo <svg class="a-ur"><use href="#i-ur"/></svg></a></div>
+      <div class="kb" style="border-radius:24px;overflow:hidden;aspect-ratio:1/1;box-shadow:var(--sh2)"><img src="assets/images/atlas-platform.png" alt="Isometric illustration of the Atlas cloud ecosystem" loading="lazy" decoding="async"></div>
+    </div>
+    <div class="tpanel" data-panel="compass">
+      <div><span class="chip">Applied AI</span><h2 class="h-md" style="margin:16px 0">Caravel Compass</h2><p style="color:var(--mut)">An enterprise copilot suite: retrieval-augmented assistants, evaluation harnesses and guardrails — tuned to your domain, measured against your KPIs, owned by your teams.</p>
+        <ul class="checks"><li><svg><use href="#i-check"/></svg>Private VPC deployment, no data leaving</li><li><svg><use href="#i-check"/></svg>Built-in eval & regression suites</li><li><svg><use href="#i-check"/></svg>Human-in-the-loop review flows</li><li><svg><use href="#i-check"/></svg>Model-agnostic orchestration</li></ul>
+        <div class="metrics"><div><b class="grad-text">120+</b><span>models in prod</span></div><div><b>97%</b><span>guardrail pass</span></div></div>
+        <a class="btn btn-blue mag" href="#/contact" style="margin-top:26px">Request a demo <svg class="a-ur"><use href="#i-ur"/></svg></a></div>
+      <div class="kb" style="border-radius:24px;overflow:hidden;aspect-ratio:1/1;box-shadow:var(--sh2)"><img src="assets/images/neural-network.png" alt="Neural network visualization for Compass AI" loading="lazy" decoding="async"></div>
+    </div>
+    <div class="tpanel" data-panel="helm">
+      <div><span class="chip">Cloud operations</span><h2 class="h-md" style="margin:16px 0">Caravel Helm</h2><p style="color:var(--mut)">Multi-cloud control plane: golden-path Kubernetes, infrastructure-as-code catalogs, cost intelligence and SRE dashboards that keep 99.99% SLOs honest.</p>
+        <ul class="checks"><li><svg><use href="#i-check"/></svg>One-click environment provisioning</li><li><svg><use href="#i-check"/></svg>FinOps insights, −40% average waste</li><li><svg><use href="#i-check"/></svg>Policy-as-code across AWS/GCP/Azure</li><li><svg><use href="#i-check"/></svg>24/7 SRE runbooks included</li></ul>
+        <div class="metrics"><div><b class="grad-text">99.99%</b><span>fleet uptime</span></div><div><b>−40%</b><span>cloud waste</span></div></div>
+        <a class="btn btn-blue mag" href="#/contact" style="margin-top:26px">Request a demo <svg class="a-ur"><use href="#i-ur"/></svg></a></div>
+      <div class="kb" style="border-radius:24px;overflow:hidden;aspect-ratio:1/1;box-shadow:var(--sh2)"><img src="assets/images/data-center.png" alt="Data center corridor for Helm operations" loading="lazy" decoding="async"></div>
+    </div>
+    <div class="tpanel" data-panel="ledger">
+      <div><span class="chip">Regulated finance</span><h2 class="h-md" style="margin:16px 0">Caravel Ledger</h2><p style="color:var(--mut)">Core infrastructure for banks and insurers: event-sourced ledgers, audit-grade observability and compliance tooling certified for PCI-DSS, SOC 2 and DORA.</p>
+        <ul class="checks"><li><svg><use href="#i-check"/></svg>Double-entry event sourcing</li><li><svg><use href="#i-check"/></svg>Immutable audit trails</li><li><svg><use href="#i-check"/></svg>Real-time fraud signals</li><li><svg><use href="#i-check"/></svg>Regulator-ready reporting</li></ul>
+        <div class="metrics"><div><b class="grad-text">4M</b><span>accounts migrated</span></div><div><b>0</b><span>audit findings</span></div></div>
+        <a class="btn btn-blue mag" href="#/contact" style="margin-top:26px">Request a demo <svg class="a-ur"><use href="#i-ur"/></svg></a></div>
+      <div class="kb" style="border-radius:24px;overflow:hidden;aspect-ratio:1/1;box-shadow:var(--sh2)"><img src="assets/images/finance-district.png" alt="Financial district at night for Ledger" loading="lazy" decoding="async"></div>
+    </div>
+  </div></div>
+
+  <div class="sec" style="padding-top:0"><div class="wrap split">
+    <div data-rv><p class="kick">Developer experience</p><h2 class="h-md" style="margin-top:16px">Live in minutes, not quarters.</h2><p class="lead" style="margin-top:16px">Every Caravel platform ships with a CLI, Terraform providers and a golden-path template gallery. Your first environment before your coffee cools.</p>
+      <div class="metrics" style="margin-top:28px"><div><b class="grad-text">6min</b><span>median first deploy</span></div><div><b>140+</b><span>templates</span></div></div></div>
+    <div class="term" data-term data-rv style="--d:.15s">
+      <div class="tt"><i></i><i></i><i></i></div>
+      <div class="tl-line" style="animation-delay:.1s"><span class="c1">$</span> npx caravel init atlas-demo</div>
+      <div class="tl-line" style="animation-delay:.7s">✓ Provisioning Kubernetes cluster… <span class="c2">done (2m41s)</span></div>
+      <div class="tl-line" style="animation-delay:1.3s">✓ Streaming sample telemetry… <span class="c2">1.2M events</span></div>
+      <div class="tl-line" style="animation-delay:1.9s">✓ Dashboards ready → <span class="c1">https://atlas.demo.caravel</span></div>
+      <div class="tl-line" style="animation-delay:2.5s"><span class="c2">Welcome aboard, captain. ⚓</span></div>
+    </div>
+  </div></div>
+</section>
+<!-- ================= INDUSTRIES ================= -->
+<section class="page" data-page="industries" data-title="Industries — Caravel">
+  <div class="phead"><div class="wrap">
+    <nav class="crumb" aria-label="Breadcrumb"><a href="#/home">Home</a><span class="sep">/</span><span>Industries</span></nav>
+    <h1 class="h-xl" style="margin-top:26px"><span class="lm" data-rv><span>Fluent in</span></span><span class="lm" data-rv style="--d:.12s"><span>your <em class="grad-text" style="font-style:normal">regulatory sea.</em></span></span></h1>
+  </div></div>
+  <div class="sec" style="padding-top:0"><div class="wrap">
+    <div class="bento">
+      <a class="bt sp2c sp2r" href="#/cases" data-rv><span class="ar"><svg><use href="#i-ur"/></svg></span><div class="bgimg"><img src="assets/images/finance-district.png" alt="Financial district at night" loading="lazy" decoding="async"></div><span class="mt">Financial services</span><h3>Banking, payments & insurance</h3><p>Core modernization, real-time payments and fraud AI under DORA, PCI-DSS and SOC 2.</p></a>
+      <a class="bt sp2r" href="#/cases" data-rv style="--d:.08s"><span class="ar"><svg><use href="#i-ur"/></svg></span><div class="bgimg"><img src="assets/images/health-tech.png" alt="Clinician with holographic interface" loading="lazy" decoding="async"></div><span class="mt">Healthcare</span><h3>Clinical-grade AI</h3><p>HIPAA & MDR-ready systems clinicians actually trust.</p></a>
+      <a class="bt" href="#/cases" data-rv style="--d:.16s"><span class="ar"><svg><use href="#i-ur"/></svg></span><div class="bgimg"><img src="assets/images/logistics-port.png" alt="Automated port" loading="lazy" decoding="async"></div><span class="mt">Logistics</span><h3>Ports & freight</h3><p>Digital twins and autonomous orchestration.</p></a>
+      <a class="bt solid" href="#/cases" data-rv style="--d:.1s"><span class="ar"><svg><use href="#i-ur"/></svg></span><span class="mt">Retail & commerce</span><h3>Unified commerce</h3><p>Headless storefronts, personalization at 60fps.</p></a>
+      <a class="bt solid" href="#/cases" data-rv style="--d:.18s"><span class="ar"><svg><use href="#i-ur"/></svg></span><span class="mt">Energy & utilities</span><h3>Grid intelligence</h3><p>Forecasting and IoT telemetry at national scale.</p></a>
+      <a class="bt sp2c" href="#/cases" data-rv style="--d:.14s"><span class="ar"><svg><use href="#i-ur"/></svg></span><div class="bgimg"><img src="assets/images/headquarters.png" alt="Modern headquarters at dusk" loading="lazy" decoding="async"></div><span class="mt">Public sector</span><h3>Government platforms</h3><p>Accessible, sovereign-cloud citizen services delivered transparently.</p></a>
+      <a class="bt solid" href="#/cases" data-rv style="--d:.22s"><span class="ar"><svg><use href="#i-ur"/></svg></span><span class="mt">SaaS & media</span><h3>Product-led scale</h3><p>PLG infrastructure from seed to Series D.</p></a>
+    </div>
+  </div></div>
+</section>
+<!-- ================= PORTFOLIO ================= -->
+<section class="page" data-page="portfolio" data-title="Portfolio — Caravel">
+  <div class="phead"><div class="wrap">
+    <nav class="crumb" aria-label="Breadcrumb"><a href="#/home">Home</a><span class="sep">/</span><span>Portfolio</span></nav>
+    <h1 class="h-xl" style="margin-top:26px"><span class="lm" data-rv><span>Selected</span></span><span class="lm" data-rv style="--d:.12s"><span><em class="grad-text" style="font-style:normal">voyages.</em></span></span></h1>
+  </div></div>
+  <div class="sec" style="padding-top:0"><div class="wrap">
+    <div class="filters" data-rv role="group" aria-label="Filter portfolio">
+      <button class="fbtn on" data-f="all">All</button><button class="fbtn" data-f="ai">AI</button><button class="fbtn" data-f="cloud">Cloud</button><button class="fbtn" data-f="product">Product</button><button class="fbtn" data-f="data">Data</button>
+    </div>
+    <div class="pgrid" data-pgrid>
+      <button class="pitem" data-cat="product" data-rv data-pt="Helios Bank — Digital Core" data-pm="Fintech · 2025 · Product + Cloud" data-pd="Replatformed 4M customers to an event-driven core with zero-downtime migration." data-pi="assets/images/finance-district.png"><div class="im"><img src="assets/images/finance-district.png" alt="Helios Bank skyline" loading="lazy" decoding="async"></div><div class="meta"><b>Helios Bank</b><span class="mono">Product · 2025</span></div></button>
+      <button class="pitem" data-cat="ai" data-rv style="--d:.06s" data-pt="Aurora Health — AI Triage" data-pm="Healthcare · 2025 · AI" data-pd="Clinical-grade triage ML across 42 clinics with human-in-the-loop review." data-pi="assets/images/health-tech.png"><div class="im"><img src="assets/images/health-tech.png" alt="Aurora Health hologram" loading="lazy" decoding="async"></div><div class="meta"><b>Aurora Health</b><span class="mono">AI · 2025</span></div></button>
+      <button class="pitem" data-cat="data" data-rv style="--d:.12s" data-pt="Nordwind — Port Orchestration" data-pm="Logistics · 2024 · Data + AI" data-pd="IoT telemetry and digital twins orchestrating 1.8M containers a year." data-pi="assets/images/logistics-port.png"><div class="im"><img src="assets/images/logistics-port.png" alt="Nordwind automated port" loading="lazy" decoding="async"></div><div class="meta"><b>Nordwind</b><span class="mono">Data · 2024</span></div></button>
+      <button class="pitem" data-cat="cloud" data-rv data-pt="Quantica — ML Platform" data-pm="Energy · 2025 · Cloud + AI" data-pd="Grid forecasting platform on Kubernetes processing 3.2B events daily." data-pi="assets/images/data-center.png"><div class="im"><img src="assets/images/data-center.png" alt="Quantica data center" loading="lazy" decoding="async"></div><div class="meta"><b>Quantica</b><span class="mono">Cloud · 2025</span></div></button>
+      <button class="pitem" data-cat="ai" data-rv style="--d:.06s" data-pt="Compass AI — Copilot Suite" data-pm="Platform · 2024 · AI" data-pd="Enterprise copilots with eval harnesses and guardrails, 120+ models live." data-pi="assets/images/neural-network.png"><div class="im"><img src="assets/images/neural-network.png" alt="Compass AI neural filaments" loading="lazy" decoding="async"></div><div class="meta"><b>Compass AI</b><span class="mono">AI · 2024</span></div></button>
+      <button class="pitem" data-cat="product" data-rv style="--d:.12s" data-pt="Atlas — Analytics Cloud" data-pm="Platform · 2025 · Product" data-pd="Semantic-layer analytics with sub-second OLAP and reverse-ETL." data-pi="assets/images/analytics-dashboard.png"><div class="im"><img src="assets/images/analytics-dashboard.png" alt="Atlas analytics dashboard" loading="lazy" decoding="async"></div><div class="meta"><b>Atlas</b><span class="mono">Product · 2025</span></div></button>
+      <button class="pitem" data-cat="cloud" data-rv data-pt="Meridian — DevEx Platform" data-pm="SaaS · 2024 · Cloud" data-pd="Golden-path developer platform cutting deploy time from days to minutes." data-pi="assets/images/engineering-workspace.png"><div class="im"><img src="assets/images/engineering-workspace.png" alt="Meridian engineering workspace" loading="lazy" decoding="async"></div><div class="meta"><b>Meridian</b><span class="mono">Cloud · 2024</span></div></button>
+      <button class="pitem" data-cat="product" data-rv style="--d:.06s" data-pt="Vantage Air — Crew OS" data-pm="Aviation · 2023 · Product" data-pd="Operations suite for 9,000 crew members across 40 hubs." data-pi="assets/images/strategy-meeting.png"><div class="im"><img src="assets/images/strategy-meeting.png" alt="Vantage Air boardroom" loading="lazy" decoding="async"></div><div class="meta"><b>Vantage Air</b><span class="mono">Product · 2023</span></div></button>
+      <button class="pitem" data-cat="data" data-rv style="--d:.12s" data-pt="Skyline — Personalization" data-pm="Retail · 2024 · Data" data-pd="Real-time personalization engine lifting basket size 18%." data-pi="assets/images/headquarters.png"><div class="im"><img src="assets/images/headquarters.png" alt="Skyline retail HQ" loading="lazy" decoding="async"></div><div class="meta"><b>Skyline Retail</b><span class="mono">Data · 2024</span></div></button>
+    </div>
+  </div></div>
+</section>
+<!-- ================= CASE STUDIES ================= -->
+<section class="page" data-page="cases" data-title="Case Studies — Caravel">
+  <div class="phead"><div class="wrap">
+    <nav class="crumb" aria-label="Breadcrumb"><a href="#/home">Home</a><span class="sep">/</span><span>Case Studies</span></nav>
+    <h1 class="h-xl" style="margin-top:26px"><span class="lm" data-rv><span>Proof,</span></span><span class="lm" data-rv style="--d:.12s"><span>not <em class="grad-text" style="font-style:normal">promises.</em></span></span></h1>
+  </div></div>
+  <div class="sec" style="padding-top:0"><div class="wrap stack">
+    <article class="st-card card" style="--i:0">
+      <div class="tx"><span class="chip" style="align-self:start">Helios Bank · Fintech</span><h3 class="h-md">From monolith to momentum.</h3><p style="color:var(--mut);font-size:14.5px">A 14-month replatform of a 30-year-old core. Event-driven microservices, a new design system, and a migration so quiet customers never noticed — which was the point.</p>
+        <div class="metrics"><div><b class="grad-text">+38%</b><span>conversion</span></div><div><b>−61%</b><span>infra cost</span></div><div><b>2.1s→0.4s</b><span>app load</span></div></div>
+        <blockquote style="border-left:2px solid var(--cyan);padding-left:16px;color:var(--ink2);font-size:14px;margin-top:8px">"Zero downtime. Zero drama. I still don't fully believe it." — CTO, Helios Bank</blockquote></div>
+      <div class="im"><img src="assets/images/finance-district.png" alt="Helios Bank city skyline" loading="lazy" decoding="async"></div>
+    </article>
+    <article class="st-card card" style="--i:1">
+      <div class="tx"><span class="chip" style="align-self:start">Aurora Health · Healthcare</span><h3 class="h-md">AI that clinicians defend in meetings.</h3><p style="color:var(--mut);font-size:14.5px">Triage models with calibrated uncertainty and human-in-the-loop review. Passed clinical governance on first submission; wait times fell by a third within two quarters.</p>
+        <div class="metrics"><div><b class="grad-text">−34%</b><span>wait time</span></div><div><b>42</b><span>clinics</span></div><div><b>97%</b><span>trust score</span></div></div>
+        <blockquote style="border-left:2px solid var(--cyan);padding-left:16px;color:var(--ink2);font-size:14px;margin-top:8px">"The first AI our doctors ask to keep." — CMO, Aurora Health</blockquote></div>
+      <div class="im"><img src="assets/images/health-tech.png" alt="Aurora Health clinician hologram" loading="lazy" decoding="async"></div>
+    </article>
+    <article class="st-card card" style="--i:2">
+      <div class="tx"><span class="chip" style="align-self:start">Nordwind · Logistics</span><h3 class="h-md">A port that thinks ahead.</h3><p style="color:var(--mut);font-size:14.5px">Digital twins of three ports, 40,000 IoT sensors, and route optimization that replans every 90 seconds. Throughput up 22% with the same cranes and the same crews.</p>
+        <div class="metrics"><div><b class="grad-text">+22%</b><span>throughput</span></div><div><b>40k</b><span>sensors</span></div><div><b>90s</b><span>replan cycle</span></div></div>
+        <blockquote style="border-left:2px solid var(--cyan);padding-left:16px;color:var(--ink2);font-size:14px;margin-top:8px">"Our cranes didn't change. Our decisions did." — COO, Nordwind</blockquote></div>
+      <div class="im"><img src="assets/images/logistics-port.png" alt="Nordwind port automation" loading="lazy" decoding="async"></div>
+    </article>
+    <article class="st-card card" style="--i:3">
+      <div class="tx"><span class="chip" style="align-self:start">Quantica · Energy</span><h3 class="h-md">Forecasting the grid, second by second.</h3><p style="color:var(--mut);font-size:14.5px">A forecasting ML platform balancing renewable load across 3 countries — 3.2B events a day at 42ms, on a fleet that costs 40% less than the old one.</p>
+        <div class="metrics"><div><b class="grad-text">3.2B</b><span>events/day</span></div><div><b>−40%</b><span>cloud cost</span></div><div><b>99.99%</b><span>uptime</span></div></div>
+        <blockquote style="border-left:2px solid var(--cyan);padding-left:16px;color:var(--ink2);font-size:14px;margin-top:8px">"The grid is calmer now. So are we." — VP Platform, Quantica</blockquote></div>
+      <div class="im"><img src="assets/images/data-center.png" alt="Quantica data center" loading="lazy" decoding="async"></div>
+    </article>
+  </div></div>
+  <div class="sec" style="padding-top:0"><div class="wrap">
+    <div class="stats" data-rv>
+      <div class="stat"><b><span data-count="38">0</span><em>%</em></b><span>Average conversion lift across product replatforms</span><div class="pline"><i></i></div></div>
+      <div class="stat"><b><span data-count="52">0</span><em>%</em></b><span>Average infra cost reduction after cloud migration</span><div class="pline"><i></i></div></div>
+      <div class="stat"><b><span data-count="9">0</span><em>mo</em></b><span>Median time from kickoff to production</span><div class="pline"><i></i></div></div>
+      <div class="stat"><b><span data-count="100">0</span><em>%</em></b><span>Of case-study clients who re-engaged</span><div class="pline"><i></i></div></div>
+    </div>
+  </div></div>
+</section>
+<!-- ================= PRICING ================= -->
+<section class="page" data-page="pricing" data-title="Pricing — Caravel">
+  <div class="phead"><div class="wrap" style="text-align:center;display:flex;flex-direction:column;align-items:center">
+    <nav class="crumb" aria-label="Breadcrumb"><a href="#/home">Home</a><span class="sep">/</span><span>Pricing</span></nav>
+    <h1 class="h-xl" style="margin-top:26px"><span class="lm" data-rv><span>Honest</span></span><span class="lm" data-rv style="--d:.12s"><span><em class="grad-text" style="font-style:normal">charts.</em></span></span></h1>
+    <p class="lead" style="margin-top:22px" data-rv>No hidden reefs. Fixed-scope voyages or embedded crews, priced transparently and billed monthly.</p>
+    <div class="bill" data-rv style="margin-top:30px" role="group" aria-label="Billing period">
+      <button class="on" data-bill="m">Monthly</button><button data-bill="y">Annual</button><span class="save">SAVE 20%</span>
+    </div>
+  </div></div>
+  <div class="sec" style="padding-top:20px"><div class="wrap">
+    <div class="plans">
+      <div class="card plan" data-rv><span class="mono">Voyage</span><h3 style="font-size:20px">For defined problems</h3>
+        <div class="price">$<span class="flip" data-m="9,800" data-y="7,840">9,800</span><small> /mo</small></div>
+        <ul><li><svg><use href="#i-check"/></svg>1 senior squad (4 specialists)</li><li><svg><use href="#i-check"/></svg>Weekly ship cadence & demos</li><li><svg><use href="#i-check"/></svg>Design + engineering included</li><li><svg><use href="#i-check"/></svg>Slack-connect with your team</li><li><svg><use href="#i-check"/></svg>Quarterly strategy review</li></ul>
+        <a class="btn btn-ghost" href="#/contact">Choose Voyage</a></div>
+      <div class="card plan feat" data-rv style="--d:.1s"><span class="badge">Most chosen</span><span class="mono" style="color:#7ce7ff">Expedition</span><h3 style="font-size:20px">For platform builders</h3>
+        <div class="price">$<span class="flip" data-m="24,500" data-y="19,600">24,500</span><small style="color:rgba(255,255,255,.6)"> /mo</small></div>
+        <ul><li><svg><use href="#i-check"/></svg>2 squads + staff architect</li><li><svg><use href="#i-check"/></svg>AI & data engineering included</li><li><svg><use href="#i-check"/></svg>24/7 SRE & 99.99% SLO</li><li><svg><use href="#i-check"/></svg>Security & compliance pack</li><li><svg><use href="#i-check"/></svg>Executive steering monthly</li><li><svg><use href="#i-check"/></svg>Enablement & handover plan</li></ul>
+        <a class="btn btn-light" href="#/contact">Choose Expedition</a></div>
+      <div class="card plan" data-rv style="--d:.2s"><span class="mono">Flagship</span><h3 style="font-size:20px">For fleet partnerships</h3>
+        <div class="price" style="font-size:34px;padding:9px 0">Custom</div>
+        <ul><li><svg><use href="#i-check"/></svg>Multi-squad, multi-year alliance</li><li><svg><use href="#i-check"/></svg>Co-owned platforms & OKRs</li><li><svg><use href="#i-check"/></svg>Dedicated chief architect</li><li><svg><use href="#i-check"/></svg>On-site residencies</li><li><svg><use href="#i-check"/></svg>Volume & governance terms</li></ul>
+        <a class="btn btn-ghost" href="#/contact">Talk to us</a></div>
+    </div>
+    <div class="card" style="margin-top:70px;overflow-x:auto" data-rv>
+      <table class="ctable">
+        <thead><tr><th style="width:40%">Capability</th><th>Voyage</th><th>Expedition</th><th>Flagship</th></tr></thead>
+        <tbody>
+          <tr><td>Senior product squad</td><td><svg><use href="#i-check"/></svg></td><td><svg><use href="#i-check"/></svg></td><td><svg><use href="#i-check"/></svg></td></tr>
+          <tr><td>Staff architect oversight</td><td>—</td><td><svg><use href="#i-check"/></svg></td><td><svg><use href="#i-check"/></svg></td></tr>
+          <tr><td>AI / ML engineering</td><td>Add-on</td><td><svg><use href="#i-check"/></svg></td><td><svg><use href="#i-check"/></svg></td></tr>
+          <tr><td>24/7 SRE & 99.99% SLO</td><td>—</td><td><svg><use href="#i-check"/></svg></td><td><svg><use href="#i-check"/></svg></td></tr>
+          <tr><td>Compliance pack (SOC 2 / ISO)</td><td>—</td><td><svg><use href="#i-check"/></svg></td><td><svg><use href="#i-check"/></svg></td></tr>
+          <tr><td>On-site residencies</td><td>—</td><td>—</td><td><svg><use href="#i-check"/></svg></td></tr>
+          <tr><td>Shared OKRs & co-ownership</td><td>—</td><td>—</td><td><svg><use href="#i-check"/></svg></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="max-width:760px;margin:70px auto 0" data-rv>
+      <h3 class="h-md" style="text-align:center;margin-bottom:26px">Pricing questions</h3>
+      <div class="acc"><button class="acc-h" aria-expanded="false">Can we start small and expand?<span class="pl"><svg><use href="#i-plus"/></svg></span></button><div class="acc-b"><div><p>Yes — most partners begin with a Discovery Voyage sprint and convert to Expedition after the first shipped milestone. The sprint fee is credited forward.</p></div></div></div>
+      <div class="acc"><button class="acc-h" aria-expanded="false">Who owns the IP and the code?<span class="pl"><svg><use href="#i-plus"/></svg></span></button><div class="acc-b"><div><p>You do, fully and from day one. Repos live in your organization; our access is scoped and revocable. No lock-in by contract or by architecture.</p></div></div></div>
+      <div class="acc"><button class="acc-h" aria-expanded="false">What happens when we pause?<span class="pl"><svg><use href="#i-plus"/></svg></span></button><div class="acc-b"><div><p>Pause with 30 days' notice. We hand over runbooks, recordings and a reboarding pack so resuming costs days, not months.</p></div></div></div>
+    </div>
+  </div></div>
+</section>
+<!-- ================= CAREERS ================= -->
+<section class="page" data-page="careers" data-title="Careers — Caravel">
+  <div class="phead"><div class="wrap split" style="align-items:center">
+    <div>
+      <nav class="crumb" aria-label="Breadcrumb"><a href="#/home">Home</a><span class="sep">/</span><span>Careers</span></nav>
+      <h1 class="h-xl" style="margin-top:26px"><span class="lm" data-rv><span>Join the</span></span><span class="lm" data-rv style="--d:.12s"><span><em class="grad-text" style="font-style:normal">crew.</em></span></span></h1>
+      <p class="lead" style="margin-top:24px" data-rv>180 people, 22 nationalities, one standard. We hire seniors who are still curious, and we protect their craft like it's the ballast of the ship — because it is.</p>
+      <div class="hero-cta" style="margin-top:30px" data-rv><a class="btn btn-blue mag" href="#open-roles">See open roles <svg class="a-r"><use href="#i-arr"/></svg></a><a class="btn btn-ghost mag" href="#/about">Meet the company <svg class="a-ur"><use href="#i-ur"/></svg></a></div>
+    </div>
+    <div class="band" style="min-height:420px;--d:.15s" data-rv>
+      <div class="bg kb"><img src="assets/images/team-studio.png" alt="Caravel team portrait" loading="lazy" decoding="async"></div>
+      <div class="ovl"></div><div class="in"><span class="mono" style="color:#7ce7ff">Culture</span><blockquote style="font-size:20px;max-width:24ch;margin-top:10px">No benches. No theatrics. Just the work.</blockquote></div>
+    </div>
+  </div></div>
+  <div class="sec" style="padding-top:0"><div class="wrap">
+    <div data-rv><p class="kick">Why Caravel</p><h2 class="h-md" style="margin-top:16px">What the crew keeps.</h2></div>
+    <div class="perks" style="margin-top:44px">
+      <div class="card perk" data-rv><span class="ic"><svg><use href="#i-globe"/></svg></span><h3>Remote-first, harbor-optional</h3><p>Work from anywhere; three beautiful studios when you want company.</p></div>
+      <div class="card perk" data-rv style="--d:.06s"><span class="ic"><svg><use href="#i-chart"/></svg></span><h4></h4><h3>Profit share, real share</h3><p>Annual profit distribution to every crew member, every year since 2016.</p></div>
+      <div class="card perk" data-rv style="--d:.12s"><span class="ic"><svg><use href="#i-spark"/></svg></span><h3>10% chart-time</h3><p>One day a week for open source, research or your own prototype.</p></div>
+      <div class="card perk" data-rv><span class="ic"><svg><use href="#i-heart"/></svg></span><h3>Health, fully covered</h3><p>Private health for you and dependents, plus annual executive checkups.</p></div>
+      <div class="card perk" data-rv style="--d:.06s"><span class="ic"><svg><use href="#i-cal"/></svg></span><h3>Recharge voyages</h3><p>6-week sabbatical at year 6, paid. The sea requires it.</p></div>
+      <div class="card perk" data-rv style="--d:.12s"><span class="ic"><svg><use href="#i-layers"/></svg></span><h3>Craft budget</h3><p>€3,000/yr for conferences, courses and the hardware you love.</p></div>
+    </div>
+  </div></div>
+  <div class="sec" style="padding-top:0" id="open-roles"><div class="wrap">
+    <div data-rv style="display:flex;justify-content:space-between;align-items:end;flex-wrap:wrap;gap:18px">
+      <div><p class="kick">Open roles</p><h2 class="h-md" style="margin-top:16px">14 seats open.</h2></div>
+      <div class="filters" data-rf>
+        <button class="fbtn on" data-f="all">All</button><button class="fbtn" data-f="eng">Engineering</button><button class="fbtn" data-f="design">Design</button><button class="fbtn" data-f="ai">AI</button><button class="fbtn" data-f="ops">Operations</button>
+      </div>
+    </div>
+    <div class="roles" data-rv>
+      <div class="role" data-cat="eng"><div><b>Staff Platform Engineer</b><span class="mono">Engineering · Kubernetes / Go</span></div><span class="mono">Lisbon or Remote · Full-time</span><button class="btn btn-ghost btn-sm mag" data-apply>Apply <svg class="a-ur"><use href="#i-ur"/></svg></button></div>
+      <div class="role" data-cat="ai"><div><b>Senior ML Engineer, LLM Systems</b><span class="mono">AI · RAG / Evals</span></div><span class="mono">NYC or Remote · Full-time</span><button class="btn btn-ghost btn-sm mag" data-apply>Apply <svg class="a-ur"><use href="#i-ur"/></svg></button></div>
+      <div class="role" data-cat="design"><div><b>Principal Product Designer</b><span class="mono">Design · Systems</span></div><span class="mono">Lisbon · Hybrid</span><button class="btn btn-ghost btn-sm mag" data-apply>Apply <svg class="a-ur"><use href="#i-ur"/></svg></button></div>
+      <div class="role" data-cat="eng"><div><b>Senior Frontend Engineer</b><span class="mono">Engineering · React / TypeScript</span></div><span class="mono">Remote (EU) · Full-time</span><button class="btn btn-ghost btn-sm mag" data-apply>Apply <svg class="a-ur"><use href="#i-ur"/></svg></button></div>
+      <div class="role" data-cat="ai"><div><b>Research Engineer, Forecasting</b><span class="mono">AI · Time-series</span></div><span class="mono">Singapore · Full-time</span><button class="btn btn-ghost btn-sm mag" data-apply>Apply <svg class="a-ur"><use href="#i-ur"/></svg></button></div>
+      <div class="role" data-cat="ops"><div><b>Client Partner, Regulated Industries</b><span class="mono">Operations · Enterprise</span></div><span class="mono">NYC · Hybrid</span><button class="btn btn-ghost btn-sm mag" data-apply>Apply <svg class="a-ur"><use href="#i-ur"/></svg></button></div>
+    </div>
+    <div class="steps" style="grid-template-columns:repeat(4,1fr);margin-top:90px" data-rv>
+      <div class="ln" aria-hidden="true"></div>
+      <div class="step"><span class="dot"></span><span class="n">01</span><h3>Conversation</h3><p>45 minutes with a peer, not a recruiter. Mutual curiosity.</p></div>
+      <div class="step"><span class="dot"></span><span class="n">02</span><h3>Craft session</h3><p>A real, paid working session on a real (anonymized) problem.</p></div>
+      <div class="step"><span class="dot"></span><span class="n">03</span><h3>Crew fit</h3><p>Meet the squad you'd sail with. Values, edges, questions.</p></div>
+      <div class="step"><span class="dot"></span><span class="n">04</span><h3>Offer</h3><p>Within 48 hours, with full compensation transparency.</p></div>
+    </div>
+  </div></div>
+</section>
+<!-- ================= BLOG ================= -->
+<section class="page" data-page="blog" data-title="Insights — Caravel">
+  <div class="phead"><div class="wrap">
+    <nav class="crumb" aria-label="Breadcrumb"><a href="#/home">Home</a><span class="sep">/</span><span>Insights</span></nav>
+    <h1 class="h-xl" style="margin-top:26px"><span class="lm" data-rv><span>Notes from</span></span><span class="lm" data-rv style="--d:.12s"><span>the <em class="grad-text" style="font-style:normal">voyage.</em></span></span></h1>
+  </div></div>
+  <div class="sec" style="padding-top:0"><div class="wrap">
+    <a class="card featpost" href="#/blog" data-rv>
+      <div class="im"><img src="assets/images/neural-network.png" alt="Neural network filaments" loading="lazy" decoding="async"></div>
+      <div class="tx"><div style="display:flex;gap:10px"><span class="chip">AI</span><span class="chip">12 min read</span></div>
+        <h2 class="h-md">Scaling LLM systems past the demo: evals, guardrails and the boring parts that matter.</h2>
+        <p style="color:var(--mut);font-size:14.5px">What 120 production models taught us about the distance between a compelling demo and a system a regulated enterprise will actually run.</p>
+        <div class="who" style="margin-top:6px"><span class="ava" style="width:38px;height:38px;font-size:12px">DN</span><span class="mono">David Ncube · Aug 2026</span></div></div>
+    </a>
+    <div class="bgrid" style="margin-top:26px">
+      <a class="card bcard" href="#/blog" data-rv><div class="im"><img src="assets/images/data-center.png" alt="Data center" loading="lazy" decoding="async"></div><div class="tx"><span class="chip" style="align-self:start">Cloud</span><h3>FinOps without fiction: how we cut cloud waste 40% without slowing teams.</h3><span class="mono">7 min · Jul 2026</span></div></a>
+      <a class="card bcard" href="#/blog" data-rv style="--d:.08s"><div class="im"><div class="cov" style="background:linear-gradient(135deg,#0a1633,#1e5eff)">Aa</div></div><div class="tx"><span class="chip" style="align-self:start">Design</span><h3>Design tokens at enterprise scale: one source of truth, four platforms.</h3><span class="mono">6 min · Jun 2026</span></div></a>
+      <a class="card bcard" href="#/blog" data-rv style="--d:.16s"><div class="im"><img src="assets/images/engineering-workspace.png" alt="Keyboard close-up" loading="lazy" decoding="async"></div><div class="tx"><span class="chip" style="align-self:start">Engineering</span><h3>Trunk-based at 180 engineers: the discipline that buys us speed.</h3><span class="mono">9 min · Jun 2026</span></div></a>
+      <a class="card bcard" href="#/blog" data-rv><div class="im"><img src="assets/images/finance-district.png" alt="City at night" loading="lazy" decoding="async"></div><div class="tx"><span class="chip" style="align-self:start">Fintech</span><h3>Zero-downtime core migration: a field manual from Helios Bank.</h3><span class="mono">14 min · May 2026</span></div></a>
+      <a class="card bcard" href="#/blog" data-rv style="--d:.08s"><div class="im"><div class="cov" style="background:linear-gradient(135deg,#0aa5d8,#12234f)">∞</div></div><div class="tx"><span class="chip" style="align-self:start">Culture</span><h3>No benches: the economics of always-staffed senior teams.</h3><span class="mono">5 min · Apr 2026</span></div></a>
+      <a class="card bcard" href="#/blog" data-rv style="--d:.16s"><div class="im"><img src="assets/images/health-tech.png" alt="Health hologram" loading="lazy" decoding="async"></div><div class="tx"><span class="chip" style="align-self:start">Healthcare</span><h3>Human-in-the-loop: designing AI that clinicians defend.</h3><span class="mono">8 min · Mar 2026</span></div></a>
+    </div>
+    <div class="pager" data-rv aria-label="Pagination"><button class="on">1</button><button>2</button><button>3</button><button aria-label="Next page"><svg style="width:14px;height:14px"><use href="#i-arr"/></svg></button></div>
+    <div class="card" style="margin-top:70px;padding:clamp(28px,4vw,50px);display:flex;justify-content:space-between;gap:26px;flex-wrap:wrap;align-items:center" data-rv>
+      <div><h3 class="h-md">The Logbook</h3><p style="color:var(--mut);font-size:14px;margin-top:8px">One email a month. Engineering notes, no marketing fog.</p></div>
+      <form class="nl-form" data-nl style="max-width:420px;flex:1;background:var(--bg2);border-color:var(--line2)"><input type="email" required placeholder="captain@yourcompany.com" aria-label="Email"><button class="btn btn-navy btn-sm" type="submit">Subscribe</button></form>
+    </div>
+  </div></div>
+</section>
+<!-- ================= FAQ ================= -->
+<section class="page" data-page="faq" data-title="FAQ — Caravel">
+  <div class="phead"><div class="wrap">
+    <nav class="crumb" aria-label="Breadcrumb"><a href="#/home">Home</a><span class="sep">/</span><span>FAQ</span></nav>
+    <h1 class="h-xl" style="margin-top:26px"><span class="lm" data-rv><span>Asked &</span></span><span class="lm" data-rv style="--d:.12s"><span><em class="grad-text" style="font-style:normal">answered.</em></span></span></h1>
+  </div></div>
+  <div class="sec" style="padding-top:0"><div class="wrap faq-grid">
+    <div class="sticky" style="position:sticky;top:calc(var(--nav-h) + 30px)" data-rv>
+      <p class="kick">Search</p>
+      <div class="field" style="margin-top:16px"><input id="faqQ" type="text" placeholder=" " aria-label="Search FAQ"><label>Type a question…</label></div>
+      <p class="mono" style="margin:22px 0 10px">Categories</p>
+      <div style="display:flex;flex-direction:column;gap:6px;align-items:flex-start">
+        <a class="go" style="color:var(--blue);font-weight:600;font-size:14px" href="#faq-g">General</a>
+        <a class="go" style="color:var(--blue);font-weight:600;font-size:14px" href="#faq-s">Services & delivery</a>
+        <a class="go" style="color:var(--blue);font-weight:600;font-size:14px" href="#faq-x">Security & compliance</a>
+        <a class="go" style="color:var(--blue);font-weight:600;font-size:14px" href="#faq-b">Billing & contracts</a>
+      </div>
+      <div class="card" style="padding:22px;margin-top:30px"><b style="font-family:var(--disp);font-size:15px">Still curious?</b><p style="font-size:13px;color:var(--mut);margin:8px 0 14px">A human replies within one business day.</p><a class="btn btn-navy btn-sm" href="#/contact">Contact us</a></div>
+    </div>
+    <div id="faqList" data-rv style="--d:.1s">
+      <h3 class="h-md" id="faq-g" style="margin-bottom:18px">General</h3>
+      <div class="acc" data-q="what does caravel do company"><button class="acc-h" aria-expanded="false">What exactly does Caravel do?<span class="pl"><svg><use href="#i-plus"/></svg></span></button><div class="acc-b"><div><p>We design, build and operate digital products and platforms: strategy, product design, software engineering, AI systems, cloud infrastructure and security — as one accountable team.</p></div></div></div>
+      <div class="acc" data-q="how big is the team size seniors"><button class="acc-h" aria-expanded="false">How big is the team, and how senior?<span class="pl"><svg><use href="#i-plus"/></svg></span></button><div class="acc-b"><div><p>180 people across Lisbon, New York and Singapore. Median experience is 9 years; we don't staff junior-only benches on client voyages.</p></div></div></div>
+      <div class="acc" data-q="where are you located offices timezone"><button class="acc-h" aria-expanded="false">Which time zones do you cover?<span class="pl"><svg><use href="#i-plus"/></svg></span></button><div class="acc-b"><div><p>Three studios give us follow-the-sun delivery: EU (Lisbon), US East (NYC) and APAC (Singapore), plus remote crew across 14 countries.</p></div></div></div>
+      <h3 class="h-md" id="faq-s" style="margin:34px 0 18px">Services & delivery</h3>
+      <div class="acc" data-q="how fast can we start kickoff timeline"><button class="acc-h" aria-expanded="false">How fast can a crew start?<span class="pl"><svg><use href="#i-plus"/></svg></span></button><div class="acc-b"><div><p>Discovery sprints can kick off within 2 weeks of signing; full squads within 4–6 weeks depending on specialization mix.</p></div></div></div>
+      <div class="acc" data-q="do you work with our existing teams embedded"><button class="acc-h" aria-expanded="false">Do you embed with our existing teams?<span class="pl"><svg><use href="#i-plus"/></svg></span></button><div class="acc-b"><div><p>Yes — embedded crews are our default model. We join your rituals, your repos and your Slack, and we measure ourselves against your DORA metrics.</p></div></div></div>
+      <div class="acc" data-q="what happens after launch handover maintenance"><button class="acc-h" aria-expanded="false">What happens after launch?<span class="pl"><svg><use href="#i-plus"/></svg></span></button><div class="acc-b"><div><p>Your choice: full handover with enablement and runbooks, or a long-term SRE/partnership model with 99.99% SLOs. Both include a 60-day warranty window.</p></div></div></div>
+      <h3 class="h-md" id="faq-x" style="margin:34px 0 18px">Security & compliance</h3>
+      <div class="acc" data-q="certifications iso soc compliance"><button class="acc-h" aria-expanded="false">Which certifications do you hold?<span class="pl"><svg><use href="#i-plus"/></svg></span></button><div class="acc-b"><div><p>ISO 27001 and SOC 2 Type II, with PCI-DSS scoped engagements for payment work. Reports are available under NDA within one business day.</p></div></div></div>
+      <div class="acc" data-q="where is data stored ai training"><button class="acc-h" aria-expanded="false">Is our data used to train AI models?<span class="pl"><svg><use href="#i-plus"/></svg></span></button><div class="acc-b"><div><p>Never. Client data stays in your tenant or your cloud. Compass deployments are private-VPC by default with zero external telemetry.</p></div></div></div>
+      <div class="acc" data-q="security review pentest disclosure"><button class="acc-h" aria-expanded="false">Do you support security reviews and pentests?<span class="pl"><svg><use href="#i-plus"/></svg></span></button><div class="acc-b"><div><p>Yes — we run annual third-party pentests, maintain a public responsible-disclosure policy, and welcome your red team.</p></div></div></div>
+      <h3 class="h-md" id="faq-b" style="margin:34px 0 18px">Billing & contracts</h3>
+      <div class="acc" data-q="how do you charge pricing model"><button class="acc-h" aria-expanded="false">How do you charge?<span class="pl"><svg><use href="#i-plus"/></svg></span></button><div class="acc-b"><div><p>Fixed monthly per crew, billed in arrears, with scope changes priced transparently before they happen. No surprise change orders — ever.</p></div></div></div>
+      <div class="acc" data-q="ip ownership code repositories"><button class="acc-h" aria-expanded="false">Who owns the intellectual property?<span class="pl"><svg><use href="#i-plus"/></svg></span></button><div class="acc-b"><div><p>You do, from the first commit. Code lives in your repositories; designs in your workspace. Our engagement letter says so in plain language.</p></div></div></div>
+      <div class="acc" data-q="notice period pause cancel contract"><button class="acc-h" aria-expanded="false">What's the notice period?<span class="pl"><svg><use href="#i-plus"/></svg></span></button><div class="acc-b"><div><p>30 days on monthly plans. We'd rather earn renewal than contract it — retention is 98% anyway.</p></div></div></div>
+    </div>
+  </div></div>
+</section>
+<!-- ================= TESTIMONIALS ================= -->
+<section class="page" data-page="testimonials" data-title="Testimonials — Caravel">
+  <div class="phead"><div class="wrap">
+    <nav class="crumb" aria-label="Breadcrumb"><a href="#/home">Home</a><span class="sep">/</span><span>Testimonials</span></nav>
+    <h1 class="h-xl" style="margin-top:26px"><span class="lm" data-rv><span>Words from</span></span><span class="lm" data-rv style="--d:.12s"><span>the <em class="grad-text" style="font-style:normal">fleet.</em></span></span></h1>
+  </div></div>
+  <div class="sec" style="padding-top:0"><div class="wrap">
+    <div class="card" style="padding:clamp(30px,5vw,64px)" data-rv>
+      <div class="slider" data-slider>
+        <div class="sl-track">
+          <div class="sl-slide"><span class="qmark">"</span><p class="slide-q" style="margin-top:10px">We've worked with the famous consultancies. Caravel is the only partner whose code we'd show an auditor with pride.</p><div class="who"><span class="ava">TH</span><div><b style="font-family:var(--disp);font-size:15px">Tomas Hrubý</b><br><span class="mono">CISO — Meridian</span></div></div></div>
+          <div class="sl-slide"><span class="qmark">"</span><p class="slide-q" style="margin-top:10px">Their squad became our benchmark. We now measure internal teams against Caravel's cadence — and they know it, humbly.</p><div class="who"><span class="ava" style="background:linear-gradient(135deg,#0aa5d8,#1e5eff)">AL</span><div><b style="font-family:var(--disp);font-size:15px">Amara Lindgren</b><br><span class="mono">CPO — Skyline Retail</span></div></div></div>
+          <div class="sl-slide"><span class="qmark">"</span><p class="slide-q" style="margin-top:10px">From first workshop to production in nine months, at the budget we signed. In this industry that's folklore — except here.</p><div class="who"><span class="ava" style="background:linear-gradient(135deg,#12234f,#0aa5d8)">RF</span><div><b style="font-family:var(--disp);font-size:15px">Rafael Fontes</b><br><span class="mono">COO — Atlas Energy</span></div></div></div>
+        </div>
+        <div class="sl-ctrl">
+          <button class="icon-btn" data-sl="prev" aria-label="Previous"><svg style="transform:rotate(180deg)"><use href="#i-arr"/></svg></button>
+          <button class="icon-btn" data-sl="next" aria-label="Next"><svg><use href="#i-arr"/></svg></button>
+          <span class="cnt" data-sl-cnt>01 / 03</span><div class="sl-dots" data-sl-dots></div>
+        </div>
+      </div>
+    </div>
+    <div class="bgrid" style="margin-top:26px">
+      <div class="card perk" data-rv><p style="font-size:14.5px;color:var(--ink2)">"The design system paid for the whole engagement in the first quarter."</p><div class="who" style="margin-top:16px"><span class="ava" style="width:38px;height:38px;font-size:12px">KW</span><div><b style="font-family:var(--disp);font-size:14px">Kira Weber</b><br><span class="mono">Head of Design — Vantage Air</span></div></div></div>
+      <div class="card perk" data-rv style="--d:.06s"><p style="font-size:14.5px;color:var(--ink2)">"42ms p95 on 3 billion events. Our previous vendor called that 'aspirational'."</p><div class="who" style="margin-top:16px"><span class="ava" style="width:38px;height:38px;font-size:12px;background:linear-gradient(135deg,#0aa5d8,#1e5eff)">JP</span><div><b style="font-family:var(--disp);font-size:14px">Jonas Petersen</b><br><span class="mono">VP Platform — Quantica</span></div></div></div>
+      <div class="card perk" data-rv style="--d:.12s"><p style="font-size:14.5px;color:var(--ink2)">"They flagged a risk in week two that saved us a quarter. That's what senior means."</p><div class="who" style="margin-top:16px"><span class="ava" style="width:38px;height:38px;font-size:12px;background:linear-gradient(135deg,#12234f,#0aa5d8)">ND</span><div><b style="font-family:var(--disp);font-size:14px">Nadia Duarte</b><br><span class="mono">PMO Director — Helios Bank</span></div></div></div>
+      <div class="card perk" data-rv><p style="font-size:14.5px;color:var(--ink2)">"Our developers actually enjoy the platform now. Recruiting got easier. Seriously."</p><div class="who" style="margin-top:16px"><span class="ava" style="width:38px;height:38px;font-size:12px;background:linear-gradient(135deg,#1e5eff,#12234f)">OB</span><div><b style="font-family:var(--disp);font-size:14px">Owen Blake</b><br><span class="mono">Eng Director — Meridian</span></div></div></div>
+      <div class="card perk" data-rv style="--d:.06s"><p style="font-size:14.5px;color:var(--ink2)">"Governance board approved the AI on first review. Unprecedented, per our records."</p><div class="who" style="margin-top:16px"><span class="ava" style="width:38px;height:38px;font-size:12px;background:linear-gradient(135deg,#0aa5d8,#12234f)">IK</span><div><b style="font-family:var(--disp);font-size:14px">Dr. Ingrid Keller</b><br><span class="mono">CMO — Aurora Health</span></div></div></div>
+      <div class="card perk" data-rv style="--d:.12s"><p style="font-size:14.5px;color:var(--ink2)">"Three ports, one control room, zero drama. The crew earned their name."</p><div class="who" style="margin-top:16px"><span class="ava" style="width:38px;height:38px;font-size:12px">MO</span><div><b style="font-family:var(--disp);font-size:14px">Marcus Okafor</b><br><span class="mono">VP Engineering — Nordwind</span></div></div></div>
+    </div>
+    <div style="margin-top:60px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px" data-rv>
+      <button class="card perk vbtn" data-vt="Helios Bank — the migration story" style="text-align:left;position:relative;overflow:hidden"><div class="vplayer" style="aspect-ratio:16/10;border-radius:14px"><span class="pulse"><svg><use href="#i-play"/></svg></span></div><b style="font-family:var(--disp);margin-top:16px;display:block">Helios Bank — the migration story</b><span class="mono">3:42 · Video</span></button>
+      <button class="card perk vbtn" data-vt="Aurora Health — AI in the clinic" style="text-align:left;position:relative;overflow:hidden"><div class="vplayer" style="aspect-ratio:16/10;border-radius:14px"><span class="pulse"><svg><use href="#i-play"/></svg></span></div><b style="font-family:var(--disp);margin-top:16px;display:block">Aurora Health — AI in the clinic</b><span class="mono">4:15 · Video</span></button>
+      <button class="card perk vbtn" data-vt="Nordwind — inside the control room" style="text-align:left;position:relative;overflow:hidden"><div class="vplayer" style="aspect-ratio:16/10;border-radius:14px"><span class="pulse"><svg><use href="#i-play"/></svg></span></div><b style="font-family:var(--disp);margin-top:16px;display:block">Nordwind — inside the control room</b><span class="mono">2:58 · Video</span></button>
+    </div>
+  </div></div>
+</section>
+<!-- ================= CONTACT ================= -->
+<section class="page" data-page="contact" data-title="Contact — Caravel">
+  <div class="phead"><div class="wrap">
+    <nav class="crumb" aria-label="Breadcrumb"><a href="#/home">Home</a><span class="sep">/</span><span>Contact</span></nav>
+    <h1 class="h-xl" style="margin-top:26px"><span class="lm" data-rv><span>Open a</span></span><span class="lm" data-rv style="--d:.12s"><span><em class="grad-text" style="font-style:normal">channel.</em></span></span></h1>
+  </div></div>
+  <div class="sec" style="padding-top:0"><div class="wrap ct-grid">
+    <div data-rv>
+      <p class="lead">Tell us where you're headed. A partner — not a form-bot — replies within one business day.</p>
+      <div style="display:flex;flex-direction:column;gap:12px;margin-top:30px">
+        <a class="office" href="mailto:hello@caravel.tech"><div><b>hello@caravel.tech</b><br><span class="mono">New business</span></div><svg style="width:16px;height:16px;color:var(--blue)"><use href="#i-mail"/></svg></a>
+        <a class="office" href="tel:+351210000000"><div><b>+351 21 000 0000</b><br><span class="mono">Mon–Fri · 9:00–19:00 WET</span></div><svg style="width:16px;height:16px;color:var(--blue)"><use href="#i-phone"/></svg></a>
+      </div>
+      <p class="mono" style="margin:34px 0 12px">Harbors</p>
+      <div class="offices">
+        <div class="office"><div><b>Lisbon — HQ</b><br><span class="mono">38.7169° N, 9.1399° W</span></div><span class="chip">14:02 local</span></div>
+        <div class="office"><div><b>New York</b><br><span class="mono">40.7128° N, 74.0060° W</span></div><span class="chip">09:02 local</span></div>
+        <div class="office"><div><b>Singapore</b><br><span class="mono">1.3521° N, 103.8198° E</span></div><span class="chip">21:02 local</span></div>
+      </div>
+      <div class="socials" style="margin-top:30px">
+        <a href="#" aria-label="LinkedIn" style="border-color:var(--line2)"><svg style="color:var(--ink)"><use href="#i-li"/></svg></a>
+        <a href="#" aria-label="X" style="border-color:var(--line2)"><svg style="color:var(--ink)"><use href="#i-tw"/></svg></a>
+        <a href="#" aria-label="GitHub" style="border-color:var(--line2)"><svg style="color:var(--ink)"><use href="#i-gh"/></svg></a>
+      </div>
+    </div>
+    <form class="card" style="padding:clamp(26px,4vw,46px);--d:.15s" data-cform data-rv>
+      <h3 class="h-md" style="margin-bottom:24px">Chart a project</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 16px">
+        <div class="field"><input required placeholder=" " id="cf-n"><label for="cf-n">Full name</label></div>
+        <div class="field"><input required type="email" placeholder=" " id="cf-e"><label for="cf-e">Work email</label></div>
+      </div>
+      <div class="field"><input placeholder=" " id="cf-c"><label for="cf-c">Company</label></div>
+      <div class="field"><select id="cf-b" style="appearance:none"><option>€50k – €150k</option><option>€150k – €500k</option><option>€500k – €2M</option><option>€2M+</option></select><label for="cf-b" style="top:6px;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);font-family:var(--mono)">Indicative budget</label></div>
+      <div class="field"><textarea required placeholder=" " id="cf-m"></textarea><label for="cf-m">Where are you headed?</label></div>
+      <button class="btn btn-blue mag" type="submit" style="width:100%;justify-content:center">Send the brief <svg class="a-ur"><use href="#i-ur"/></svg></button>
+      <p class="mono" style="text-align:center;margin-top:14px">Encrypted in transit · Never shared</p>
+    </form>
+  </div></div>
+</section>
+<!-- ================= 404 ================= -->
+<section class="page" data-page="404" data-title="404 — Caravel">
+  <div class="err">
+    <div class="orb o1" aria-hidden="true"></div>
+    <div>
+      <svg class="compass" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+        <circle cx="60" cy="60" r="54" stroke="var(--line2)" stroke-width="1.5"/>
+        <circle cx="60" cy="60" r="44" stroke="var(--line)" stroke-width="1"/>
+        <path d="M60 6v10M60 104v10M6 60h10M104 60h10" stroke="var(--line2)" stroke-width="1.5"/>
+        <g class="needle" id="needle"><path d="M60 22 L68 60 L60 98 L52 60 Z" fill="var(--grad)" opacity=".9"/><circle cx="60" cy="60" r="5" fill="var(--ink)"/></g>
+      </svg>
+      <div class="big" data-scr>404</div>
+      <h1 style="font-size:clamp(24px,4vw,40px);margin-top:6px">Off the chart.</h1>
+      <p class="lead" style="margin:16px auto 30px;max-width:44ch">This coordinate isn't on our map. The stars, however, still are — let's re-plot your course.</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+        <a class="btn btn-blue mag" href="#/home">Return to harbor <svg class="a-r"><use href="#i-arr"/></svg></a>
+        <a class="btn btn-ghost mag" href="#/contact">Signal the crew <svg class="a-ur"><use href="#i-ur"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRIVACY ================= -->
+<section class="page" data-page="privacy" data-title="Privacy Policy — Caravel">
+  <div class="phead"><div class="wrap"><nav class="crumb" aria-label="Breadcrumb"><a href="#/home">Home</a><span class="sep">/</span><span>Privacy</span></nav>
+    <h1 class="h-lg" style="margin-top:26px"><span class="lm" data-rv><span>Privacy Policy</span></span></h1>
+    <p class="mono" style="margin-top:14px">Last updated · 12 January 2026 · DPO: privacy@caravel.tech</p></div></div>
+  <div class="sec" style="padding-top:0"><div class="wrap doc-grid">
+    <nav class="toc" data-toc aria-label="Privacy sections">
+      <a href="#pv1" class="on">1. Data we collect</a><a href="#pv2">2. How we use it</a><a href="#pv3">3. Legal bases</a><a href="#pv4">4. Sharing</a><a href="#pv5">5. Retention</a><a href="#pv6">6. Your rights</a><a href="#pv7">7. Security</a><a href="#pv8">8. Cookies</a>
+    </nav>
+    <div class="doc" data-rv>
+      <h2 id="pv1">1. Data we collect</h2><p>We collect only what a professional relationship requires: contact details you provide, engagement records, and the minimum technical telemetry needed to operate our services securely.</p><p>We do not collect special-category data about visitors, and we never purchase third-party contact lists.</p>
+      <h2 id="pv2">2. How we use it</h2><p>Your data is used to deliver contracted services, respond to enquiries, meet legal obligations, and — with consent — send our monthly engineering logbook. No advertising profiles, ever.</p>
+      <h2 id="pv3">3. Legal bases</h2><p>Under GDPR we rely on contract performance (service delivery), legitimate interest (security and abuse prevention), consent (marketing), and legal obligation (tax and audit records).</p>
+      <h2 id="pv4">4. Sharing</h2><p>We share data only with sub-processors essential to delivery (cloud infrastructure, email delivery), each bound by DPAs. A current sub-processor list is available on request.</p>
+      <h2 id="pv5">5. Retention</h2><p>Enquiry data is deleted after 24 months of inactivity; contract records are retained for the statutory period (10 years) and then erased within 90 days.</p>
+      <h2 id="pv6">6. Your rights</h2><p>Access, rectification, erasure, portability, restriction and objection — exercisable by emailing privacy@caravel.tech. We respond within 30 days, usually within three.</p>
+      <h2 id="pv7">7. Security</h2><p>ISO 27001-certified controls, encryption in transit and at rest, annual third-party penetration tests, and a public responsible-disclosure program.</p>
+      <h2 id="pv8">8. Cookies</h2><p>This site uses one functional cookie for theme preference and privacy-respecting, aggregate analytics. No cross-site advertising cookies.</p>
+    </div>
+  </div></div>
+</section>
+<!-- ================= TERMS ================= -->
+<section class="page" data-page="terms" data-title="Terms of Service — Caravel">
+  <div class="phead"><div class="wrap"><nav class="crumb" aria-label="Breadcrumb"><a href="#/home">Home</a><span class="sep">/</span><span>Terms</span></nav>
+    <h1 class="h-lg" style="margin-top:26px"><span class="lm" data-rv><span>Terms of Service</span></span></h1>
+    <p class="mono" style="margin-top:14px">Effective · 12 January 2026 · Governed by the laws of Portugal</p></div></div>
+  <div class="sec" style="padding-top:0"><div class="wrap doc-grid">
+    <nav class="toc" data-toc aria-label="Terms sections">
+      <a href="#tm1" class="on">1. The agreement</a><a href="#tm2">2. Services</a><a href="#tm3">3. Client duties</a><a href="#tm4">4. IP & ownership</a><a href="#tm5">5. Fees</a><a href="#tm6">6. Warranties</a><a href="#tm7">7. Liability</a><a href="#tm8">8. Termination</a>
+    </nav>
+    <div class="doc" data-rv>
+      <h2 id="tm1">1. The agreement</h2><p>These terms, together with your signed Order Form and our Privacy Policy, constitute the entire agreement between Caravel Technologies S.A. and the client.</p>
+      <h2 id="tm2">2. Services</h2><ol><li>Services are described per-engagement in Order Forms referencing these terms.</li><li>Changes to scope follow the transparent change procedure in §5.</li><li>Service levels, where contracted, are reported monthly with full telemetry.</li></ol>
+      <h2 id="tm3">3. Client duties</h2><ol><li>Provide timely access to people, systems and decisions.</li><li>Own client-side acceptance within 10 business days of each demo.</li><li>Use deliverables lawfully and within licensed scope.</li></ol>
+      <h2 id="tm4">4. IP & ownership</h2><p>All deliverables assign to the client upon payment. Pre-existing Caravel tooling remains ours, licensed perpetually and royalty-free within the deliverables. Open source remains open source.</p>
+      <h2 id="tm5">5. Fees</h2><p>Fees are fixed per Order Form, invoiced monthly in arrears, payable in 30 days. Scope changes are priced and approved in writing before work begins on them.</p>
+      <h2 id="tm6">6. Warranties</h2><p>We warrant that services will be performed with professional skill and that deliverables will materially conform to specifications for 60 days after acceptance.</p>
+      <h2 id="tm7">7. Liability</h2><p>Each party's aggregate liability is capped at fees paid in the preceding 12 months, excluding uncapped liability for confidentiality breach, IP infringement, and statutory mandates.</p>
+      <h2 id="tm8">8. Termination</h2><p>Either party may terminate for material breach with 30 days' cure notice; clients may pause or end monthly engagements with 30 days' notice, with orderly handover assistance included.</p>
+    </div>
+  </div></div>
+</section>
+
+</main>
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="ft-top">
+      <div class="ft-brand">
+        <span class="wm"><svg viewBox="0 0 40 40" width="34" height="34" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="17" stroke="#7ce7ff" stroke-width="1.4"/><path d="M20 8v22M20 10c8 3 10.5 9.5 10.5 15.5H20" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/><path d="M10 30h20" stroke="#1e5eff" stroke-width="1.6" stroke-linecap="round"/></svg>Caravel</span>
+        <p>Technology & digital solutions for enterprises in motion. Navigate what's next.</p>
+        <form class="nl-form" data-nl><input type="email" required placeholder="Your work email" aria-label="Email for newsletter"><button class="btn btn-blue btn-sm" type="submit">Join</button></form>
+        <div class="socials" style="margin-top:22px">
+          <a href="#" aria-label="LinkedIn"><svg><use href="#i-li"/></svg></a><a href="#" aria-label="X"><svg><use href="#i-tw"/></svg></a><a href="#" aria-label="GitHub"><svg><use href="#i-gh"/></svg></a>
+        </div>
+      </div>
+      <div class="ft-cols">
+        <div><h4>Company</h4><a href="#/about">About</a><a href="#/careers">Careers</a><a href="#/testimonials">Testimonials</a><a href="#/contact">Contact</a><a href="#/blog">Blog</a></div>
+        <div><h4>Services</h4><a href="#/services">Strategy</a><a href="#/services">Design</a><a href="#/services">Engineering</a><a href="#/services">AI & Data</a><a href="#/services">Cloud & Security</a></div>
+        <div><h4>Resources</h4><a href="#/cases">Case Studies</a><a href="#/portfolio">Portfolio</a><a href="#/solutions">Solutions</a><a href="#/industries">Industries</a><a href="#/pricing">Pricing</a><a href="#/faq">FAQ</a></div>
+        <div><h4>Legal</h4><a href="#/privacy">Privacy Policy</a><a href="#/terms">Terms of Service</a><a href="#/privacy">Security</a><a href="#/contact">Responsible disclosure</a></div>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span>© 2026 Caravel Technologies S.A. All rights reserved.</span>
+      <span class="mono">38.7169° N, 9.1399° W — Lisbon HQ</span>
+      <span style="display:inline-flex;align-items:center;gap:8px"><i style="width:7px;height:7px;border-radius:50%;background:#28c840;box-shadow:0 0 8px #28c840"></i>All systems operational</span>
+    </div>
+  </div>
+  <div class="ft-mark" aria-hidden="true">CARAVEL</div>
+</footer>
+<!-- MODALS / WIDGETS -->
+<div id="modal" role="dialog" aria-modal="true" aria-label="Project details"><div class="bk" data-mclose></div><div class="box" id="modalBox"><button class="icon-btn x" data-mclose aria-label="Close"><svg><use href="#i-x"/></svg></button><div id="modalBody"></div></div></div>
+<div id="search" role="dialog" aria-modal="true" aria-label="Search"><div class="bk" data-sclose></div><div class="box" style="border-radius:20px"><button class="icon-btn x" data-sclose aria-label="Close"><svg><use href="#i-x"/></svg></button><input id="searchIn" placeholder="Search pages, services, case studies…" aria-label="Search"><ul id="searchRes"></ul></div></div>
+<div id="toast" role="status"><svg><use href="#i-check"/></svg><span id="toastMsg">Done</span></div>
+<div id="cookie" class="glass"><h4>🍪 A single honest cookie</h4><p>We use one functional cookie for your theme and aggregate, privacy-respecting analytics. No advertising trackers.</p><div style="display:flex;gap:10px"><button class="btn btn-navy btn-sm" id="ckY">Accept</button><button class="btn btn-ghost btn-sm" id="ckN">Decline</button></div></div>
+<button id="totop" aria-label="Back to top"><svg class="ring" viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/></svg><svg class="up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+
+<script src="js/main.js"></script>
+</body>
+</html>

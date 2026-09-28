@@ -1,0 +1,61 @@
+/* ============================================================
+   PERFORMANCE LAYER — additive only, no visual change.
+   Loaded last. Everything here is either GPU promotion, pausing
+   work that nobody can see, or the adaptive "lite" fallback.
+   ============================================================ */
+
+/* 1. BOOT GATING
+   These infinite animations used to start at t=0, behind the loader,
+   stealing frames from the boot sequence. They now hold still until
+   the loader has finished and the first real frame is painted. */
+body:not(.booted) .hero .orb,
+body:not(.booted) .hero .orb::before,
+body:not(.booted) .hero .orb::after,
+body:not(.booted) .kb img,
+body:not(.booted) .float-card,
+body:not(.booted) .mq .track,
+body:not(.booted) .cta-band::before{animation-play-state:paused}
+
+/* 2. OFF-SCREEN PAUSING (driven by IntersectionObserver in main.js)
+   A section nobody can see must not burn a compositor thread.
+   ::before/::after are listed because animation-play-state is not inherited. */
+.anim-off,
+.anim-off *,
+.anim-off::before,
+.anim-off::after{animation-play-state:paused!important}
+
+/* 3. GPU PROMOTION
+   Transform/opacity-only animation on its own layer = no repaint. */
+#pbar{will-change:transform}
+#cglow{will-change:transform}
+[data-plx]{will-change:transform}
+.mq .track{will-change:transform}
+.float-card{will-change:transform}
+.kb img{will-change:transform}
+.pitem img,
+.bcard .im img,
+.st-card .im img,
+.featpost .im img,
+.bt .bgimg img{will-change:transform}
+
+/* 4. SCROLLING STATE
+   The fixed header is promoted only while the user is actually
+   scrolling, then released so we don't pin GPU memory forever. */
+body.is-scrolling header#nav{will-change:transform}
+
+/* 5. ADAPTIVE LITE TIER
+   Engaged only when measured frame times show real stutter
+   (body.perf-lite is set by the profiler in main.js, never by default).
+   Costs are cut where they are invisible: blur radii shrink, the
+   full-page blend becomes a plain wash, particles stop. */
+body.perf-lite header#nav.scrolled{backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+body.perf-lite .glass,
+body.perf-lite .float-card{backdrop-filter:none;-webkit-backdrop-filter:none}
+body.perf-lite .float-card{background:var(--surface)}
+body.perf-lite .bt .ar{backdrop-filter:none;-webkit-backdrop-filter:none}
+body.perf-lite .noise{mix-blend-mode:normal;opacity:.035}
+body.perf-lite .hero .orb{filter:blur(26px)}
+body.perf-lite .mq .track{animation-duration:52s}
+/* reveal keeps its motion, drops the expensive blur ramp */
+body.perf-lite [data-rv]{transition-property:opacity,transform}
+body.perf-lite .page.on{animation:none}
